@@ -1,5 +1,5 @@
 
-## # Hello 👋, nice to see you !
+## Hello 👋, nice to see you !
 here are some templates that I created during my experiences
 
 ## Content
@@ -11,5 +11,6 @@ here are some templates that I created during my experiences
 - [Campaign Hebdo](https://vncpsq.github.io/Emailing/sampleo/sampleo-campaigns/index.html)
 
 ###  Uptoo
-- More to come
+- [Uptoo Hebdo](https://vncpsq.github.io/Emailing/uptoo/uptoo-candidat/index.html)
+- [Uptoo Season](https://vncpsq.github.io/Emailing/uptoo/uptoo-season/index.html)
 
