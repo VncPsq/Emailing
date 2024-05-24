@@ -1,0 +1,2103 @@
+<!DOCTYPE html>
+<html xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta content="text/html;charset=UTF-8" http-equiv="Content-Type" />
+    <title>Uptoo</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+      /*DEFAULT CSS*/
+      body {
+        text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+        padding: 0;
+        margin: 0;
+        background-color: #f5f5f5 !important;
+        font-weight: normal;
+      }
+
+      table {
+        border-collapse: collapse;
+        mso-table-lspace: 0;
+        mso-table-rspace: 0;
+      }
+
+      .d-lg-none {
+        display: none !important;
+      }
+
+      .hover:hover {
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+        transform: scale(1.01);
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+      }
+
+      .hover-dark {
+        -webkit-filter: brightness(70%);
+      }
+
+      .hover-dark:hover {
+        -webkit-filter: brightness(100%);
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        transform: scale(1.01);
+      }
+
+      .s-btn {
+        transition: all 100ms ease-in;
+      }
+
+      .s-btn__outlined_inv:hover {
+        background: rgba(140, 62, 221, 1) !important;
+        color: #ffffff !important;
+      }
+
+      .s-btn__outlined:hover {
+        background: rgba(255, 255, 255, 1) !important;
+        color: #8c3edd !important;
+      }
+
+      /* Quiz */
+      .quiz input {
+        display: none;
+      }
+      .quiz .quiz-message-correct {
+        display: none;
+      }
+      .quiz .quiz-message-wrong {
+        display: none;
+      }
+      .quiz .quiz-answer.correct:hover {
+        background: #00cd90;
+        color: #ffffff;
+      }
+      .quiz .quiz-answer.correct:hover ~ .quiz-message-correct {
+        display: block;
+      }
+      .quiz .quiz-answer.wrong:hover {
+        background: #cccccc;
+        color: #333333;
+      }
+      .quiz .quiz-answer.wrong:hover ~ .quiz-message-wrong {
+        display: block;
+      }
+      @media screen yahoo {
+        .quiz input {
+          display: none;
+        }
+      }
+
+      /* Quiz */
+
+      /*Reset Laposte TH */
+      th a,
+      th a:link,
+      th a:visited {
+        background: none !important;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        background: none !important;
+      }
+
+      /*FONTS*/
+      @media screen {
+        @font-face {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-stretch: 100%;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2)
+            format("woff2");
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+            U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+            U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        @font-face {
+          font-family: "Open Sans";
+          font-style: medium;
+          font-weight: 500;
+          font-stretch: 100%;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2)
+            format("woff2");
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+            U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+            U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        @font-face {
+          font-family: "Open Sans";
+          font-style: bold;
+          font-weight: 700;
+          font-stretch: 100%;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2)
+            format("woff2");
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+            U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+            U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+      }
+
+      /*RESPONSIVE*/
+      @media only screen and (max-width: 320px) {
+        .foo {
+          /*ORANGE MAIL*/
+        }
+
+        .fixiOS {
+          width: 320px !important;
+        }
+      }
+
+      @media only screen and (min-width: 321px) and (max-width: 415px) {
+        .foo {
+          /*ORANGE MAIL*/
+        }
+
+        .fixiOS {
+          width: 414px !important;
+        }
+      }
+
+      @media screen and (max-width: 640px) {
+        .foo {
+          /*ORANGE MAIL*/
+        }
+
+        .container-fluid {
+          width: 100% !important;
+        }
+
+        .container {
+          width: 90% !important;
+          min-width: 310px;
+        }
+
+        .col-0 {
+          width: 0px;
+        }
+
+        .col-sm-1 {
+          width: 40px;
+        }
+
+        .col-sm-2 {
+          width: 80px;
+        }
+
+        .col-sm-3 {
+          width: 120px;
+        }
+
+        .col-sm-4 {
+          width: 160px;
+        }
+
+        .col-sm-5 {
+          width: 200px;
+        }
+
+        .col-sm-6 {
+          width: 240px;
+        }
+
+        .col-sm-7 {
+          width: 280px;
+        }
+
+        .col-sm-8 {
+          width: 300px;
+        }
+
+        .col-auto {
+          width: 100%;
+          display: block;
+        }
+
+        .display-header {
+          width: 100% !important;
+          display: table-header-group !important;
+        }
+
+        .display-footer {
+          width: 100% !important;
+          display: table-footer-group !important;
+        }
+
+        .d-sm-none {
+          display: none !important;
+        }
+
+        .d-block {
+          display: block !important;
+        }
+
+        .img-fluid {
+          width: 100% !important;
+          height: auto !important;
+        }
+
+        .img-fluid-80 {
+          width: 80% !important;
+          height: auto !important;
+        }
+
+        .hauto {
+          height: auto !important;
+        }
+
+        .f12 {
+          font-size: 12px !important;
+        }
+
+        .f14 {
+          font-size: 16px !important;
+          line-height: 24px !important;
+        }
+
+        .f16 {
+          font-size: 18px !important;
+          line-height: 26px !important;
+        }
+
+        .f18 {
+          font-size: 20px !important;
+          line-height: 28px !important;
+        }
+
+        .f22 {
+          font-size: 24px !important;
+          line-height: 30px !important;
+        }
+
+        .text-left {
+          text-align: left !important;
+        }
+
+        .ml-8 {
+          margin-left: 8px !important;
+        }
+
+        .ml-16 {
+          margin-left: 16px !important;
+        }
+
+        .mr-8 {
+          margin-right: 8px !important;
+        }
+
+        .mr-16 {
+          margin-right: 16px !important;
+        }
+
+        .mt-8 {
+          margin-top: 8px !important;
+        }
+
+        .mt-16 {
+          margin-top: 16px !important;
+        }
+
+        .mt-32 {
+          margin-top: 32px !important;
+        }
+
+        .mt-64 {
+          margin-top: 32px !important;
+        }
+
+        .mb-0 {
+          margin-bottom: 0px !important;
+        }
+
+        .mb-8 {
+          margin-bottom: 8px !important;
+        }
+
+        .mb-16 {
+          margin-bottom: 16px !important;
+        }
+
+        .mb-32 {
+          margin-bottom: 32px !important;
+        }
+        /* Quiz */
+
+        /* Quiz*/
+      }
+    </style>
+    <!--[if mso]&gt;
+  &lt;xml&gt;
+    &lt;o:OfficeDocumentSettings&gt;
+      &lt;o:PixelsPerInch&gt;
+        96
+      &lt;/o:PixelsPerInch&gt;
+    &lt;/o:OfficeDocumentSettings&gt;
+  &lt;/xml&gt;
+  &lt;![endif]-->
+  </head>
+  <body>
+    <div lang="fr">
+      <!--PRE-HEADER-->
+      <table
+        role="presentation"
+        align="center"
+        border="0"
+        cellspacing="0"
+        cellpadding="0"
+        style="background-color: #f5f5f5; width: 100%"
+      >
+        <tbody>
+          <tr>
+            <td align="center">
+              <table
+                role="presentation"
+                align="center"
+                width="640"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                class="container-fluid"
+                style="width: 640px"
+              >
+                <tbody>
+                  <tr>
+                    <td align="center" valign="top">
+                      <div
+                        class="fixiOS"
+                        style="width: 320px; height: 1px"
+                      ></div>
+                      <div
+                        style="display:none;font-size:1px;color:#ffffff;line-height:1px;font-family: &#39;Roboto&#39;, Arial, sans-serif; max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;"
+                      >
+                        Les conseils par des experts RH pour bien démarrer 2023
+                      </div>
+                      <div
+                        style="display: none; max-height: 0px; overflow: hidden"
+                      >
+                        ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+                        ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+                        ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+                        ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+                        ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+                        ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      height="10"
+                      align="center"
+                      style="
+                        text-align: center;
+                        font-family: Arial, sans-serif;
+                        font-weight: normal;
+                        font-size: 11px;
+                        padding: 8px 0 10px 0;
+                      "
+                      valign="top"
+                    >
+                      <a
+                        href=""
+                        border="0"
+                        style="
+                          font-family: Arial, sans-serif;
+                          text-decoration: underline;
+                          color: #666666;
+                        "
+                        target="_blank"
+                        title="LienMirroir"
+                        >Consulter la version en ligne</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="padding: 8px 0 24px 0">
+                      <p
+                        style="
+                          font-family: Arial;
+                          font-weight: bold;
+                          font-size: 14px;
+                          padding: 0;
+                          margin: 0;
+                        "
+                      >
+                        <a
+                          href="https://r.mail.uptoo.fr/mk/un/go_jevmL3EoGP_QnswkUxIqx-O0tUl1E9attvLAp7Dt2o0yILmwE1Okw184yyXtWRolb-grevmH10xVZTnghy63TYA2zT0BEpF9xHpK-kBmnD_aRRBbr3ezMcXkOuaHycGYiPhv0z6eLnXoEuDQfGtQooaFnjlnkMeLnLsRvd6A_"
+                          style="text-decoration: underline; color: #666666"
+                          target="_blank"
+                          title="unsubscribe"
+                        >
+                          Se désabonner
+                        </a>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!--FIN PRE-HEADER-->
+
+      <!--DEBUT UNE-->
+      <table
+        role="presentation"
+        class="container-fluid"
+        align="center"
+        border="0"
+        cellspacing="0"
+        cellpadding="0"
+        width="100%"
+        style="background-color: #f5f5f5; width: 100%"
+      >
+        <tbody>
+          <tr>
+            <td align="center">
+              <table
+                role="presentation"
+                class="container-fluid"
+                align="center"
+                width="640"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                style="
+                  width: 640px;
+                  background-color: #8c3edd;
+                  border-radius: 4px;
+                "
+              >
+                <tbody>
+                  <tr>
+                    <td style="padding: 32px 0 48px 0">
+                      <div
+                        class="fixiOS"
+                        style="width: 320px; height: 0px"
+                      ></div>
+                      <table
+                        role="presentation"
+                        class="container"
+                        align="center"
+                        width="540"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="width: 540px"
+                      >
+                        <tbody>
+                          <tr>
+                            <td align="center">
+                              <a
+                                href="https://r.mail.uptoo.fr/mk/cl/f/OBDk39VXhJYMjAbJWu5fOHjFWARK6YFHPEi7dPZHsUGbRBRnrmv3ibTYiqWD2k4_HUBtvT02k5O-N1Xe0ZGupuA6WPvAB-p-vE982EKMKZijJ0IBsuinRcI8LTDh6HphEifOtG2rWOrlfYZCsBUVp-1H9BV32gZ8w3S_2TgO7Y0BEttexppQFjjmZxr6M4nb9OrT7XfHbWJvH46RLmyFo43JiJZMZnlf3VYN9S5cykljyxvdUBz7Q9-tU0-S6mch16JeXsamVDqeA0GAXynsU22HGSrAssziu14titl0"
+                                alt="Uptoo Jobs"
+                                target="blank"
+                                title="Accéder à Uptoo Jobs"
+                                sib_link_id="0"
+                              >
+                                <img
+                                  src=".assets/73a488738d07b79ce5a32fa0086058f222447113a1ec73b07f691813f5c4ece1.png?e=EAv1Si843QDQr7XbKzGOCN34ogPhgB-Em4S3ZojB44FrLObxVgNXbpKl4lR9Ph9bVUt0dLFV5M5CV5noRC5SthBSWtDWuwRGnNxm-VkZ0h52v2u7oKDbiLxeoL5rTcSHVrVmoCgEtjMKuMBGbnMhkDh81J-4yKSLu9UQaKXIEaFF4dxqIzTGuWxpn09RY-F5j6esU6tmgg"
+                                  width="48"
+                                  style="width: 48px; display: block"
+                                  alt="Logo Uptoo"
+                                  border="0"
+                                  sib_link_id="111"
+                                />
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <p
+                                style="font-family: &#39;Open Sans&#39;,&#39;Arial&#39;,Sans-serif; font-size: 12px;line-height: 16px;margin: 0;Padding:0;color:#ffffff"
+                              >
+                                Le spécialiste de la vente
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="padding: 48px 0 0 0">
+                              <h1
+                                style="color:#ffffff;font-family:&#39;Open Sans&#39;, Arial, sans-serif; font-weight:bold;font-size:32px;line-height:36px;Padding:0;margin:0;"
+                              >
+                                Les entreprises cherchent des commerciaux
+                              </h1>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 32px 0 0 0">
+                              <table
+                                role="presentation"
+                                align="center"
+                                cellpadding="0"
+                                cellspacing="0"
+                                border="0"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      class="s-btn s-btn__outlined_inv"
+                                      style="
+                                        border-radius: 4px;
+                                        background: #ffffff;
+                                        text-align: center;
+                                      "
+                                    >
+                                      <a
+                                        class="s-btn s-btn__outlined_inv"
+                                        href="https://r.mail.uptoo.fr/mk/cl/f/GNCaLVIaVSlpmUrnWRNZAhZLzLk7IGjYbIzpr5LpE8FGPOn6nB6eKcgPRGGvFN1_94Lit-HbG0TQEswgbOhxACbuSO_G5P8LfURIGc_1dkMGj8fbeQPdthHyzuKRgeuSkW95x7f9GCkFJ0WnzAtnnlIwR2Gr-oJaPodAEigaiJhhPNnnZfYeITdpFm6ME3MbmCIk4LXYxludxnFPTRjo8GcRW03hKZqg3HDpqx4G4isaGDtzI0UlLAM_cWgYqcvpC7twO0dAg-X1Ka67d9nOR0NRB7j-2xqSCck"
+                                        target="_blank"
+                                        title="Vers le site"
+                                        style="background: #ffffff; border: 0.5px solid #ffffff; font-family:&#39;Open Sans&#39;, Arial, sans-serif; font-size: 16px; line-height: 20px;font-weight: normal; color: #8C3EDD; text-align: center; text-decoration: none; Padding: 8px 18px; display: block; border-radius: 4px; white-space: nowrap;"
+                                        sib_link_id="1"
+                                        >Voir les dernières annonces</a
+                                      >
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">
+                      <a
+                        href="https://r.mail.uptoo.fr/mk/cl/f/swF8vnhSzQQ9hXS88-bZPdlvqaAXnss1i8AFutJYvAywcu2h4iYFWaY6hi6kOgnhafOCx8zvLjL_wutQ_-53daWEcEY5bYPZ0gVYe9gy33CePGKYWb313ZgXKWpATPIwi52VSYzSMb2ueL9B72c4TxX0tvsc8lwdLxVderxghMUO41jqT1z_hZcfuMFQS9ZLzwPdQkToR7LJhD7jvlMCgxLGHX_58_0SC4DKRTvrzKLUlwl_nXif6goLWqFwgEHbmD7V3zF8pKRjbvujR4OCbMaOCuKqN7e4RUw"
+                        target="_blank"
+                        title="Vers l&#39;article"
+                        sib_link_id="2"
+                      >
+                        <img
+                          src=".assets/5b1d313c45958f0bcc765faf3cac840e8a2193f3c3d0f3d04436da1a2978d7e7.png?e=esdCt2f03XIECWcoGOSgEozr2hKYoyYesLVQeoIf-sfbe0SkhNX8JQCgYUZxqSMqNfGmKscaW3m45DzXqlLX9tbuMdlI7eGASXhlfVzACcPE_USdo0J4sRUpXzsPQdUNg6Ku4qNMkFf5YYqN2zJnV6Ld07DOJFgMF61DI1gJ1RbXXgo"
+                          width="640"
+                          style="
+                            width: 640px;
+                            display: block;
+                            border: none;
+                            border-radius: 5px;
+                          "
+                          alt="Illustration Introduction"
+                          class="img-fluid"
+                          border="0"
+                          sib_link_id="124"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!--FIN UNE-->
+
+      <!--DEBUT PARAGRAPHE -->
+      <table
+        role="presentation"
+        align="center"
+        border="0"
+        cellspacing="0"
+        cellpadding="0"
+        style="background-color: #f4f4f4; width: 100%"
+      >
+        <tbody>
+          <tr>
+            <td align="center">
+              <table
+                role="presentation"
+                align="center"
+                border="0"
+                class="container-fluid"
+                width="640"
+                cellspacing="0"
+                cellpadding="0"
+                style="
+                  width: 640px;
+                  background-color: #ffffff;
+                  border-radius: 4px;
+                "
+              >
+                <tbody>
+                  <tr>
+                    <td align="center" style="padding: 32px 0 16px 0">
+                      <div
+                        class="fixiOS"
+                        style="width: 320px; height: 0px"
+                      ></div>
+                      <table
+                        role="presentation"
+                        align="center"
+                        width="540"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        class="container"
+                        style="width: 540px"
+                      >
+                        <tbody>
+                          <tr>
+                            <td align="left">
+                              <p
+                                class="f16"
+                                style="color:#283457;font-family:&#39;Open Sans&#39;, Arial, sans-serif; font-weight:normal;font-size:16px;line-height:24px;Padding:0;margin:0;"
+                              >
+                                Nouvelle année, nouvelles opportunités ? Que
+                                vous soyez en recherche active d’emploi ou déjà
+                                en poste, l&#39;équipe Uptoo vous accompagne
+                                pour faire passer votre carrière commerciale à
+                                la vitesse supérieure 🚀
+                              </p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!--DEBUT PARAGRAPHE -->
+
+      <!-- DEBUT MATCHING -->
+
+      <!-- FIN MATCHING -->
+
+      <!--DEBUT CONSEILS RH -->
+      <table
+        role="presentation"
+        align="center"
+        border="0"
+        cellspacing="0"
+        cellpadding="0"
+        style="background-color: #f4f4f4; width: 100%"
+      >
+        <tbody>
+          <tr>
+            <td align="center">
+              <table
+                role="presentation"
+                class="container-fluid"
+                align="center"
+                width="640"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                style="width: 640px; background-color: #ffffff"
+              >
+                <tbody>
+                  <tr>
+                    <td align="center" style="padding: 16px 0 32px 0">
+                      <div
+                        class="fixiOS"
+                        style="width: 300px; height: 1px"
+                      ></div>
+                      <table
+                        role="presentation"
+                        class="container"
+                        align="center"
+                        width="540"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="width: 540px"
+                      >
+                        <tbody>
+                          <tr>
+                            <td align="left">
+                              <h2
+                                class="f22"
+                                style="color:#283457;font-family:&#39;Open Sans&#39;, Arial, sans-serif;text-align:left; font-weight:bold;font-size:22px;line-height:26px;Padding:0;margin:0;"
+                              >
+                                Level Up : les conseils par des experts RH
+                              </h2>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">
+                      <table
+                        role="presentation"
+                        class="container"
+                        align="center"
+                        width="540"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="width: 540px"
+                      >
+                        <tbody>
+                          <tr>
+                            <th class="col-auto mb-32" valign="top">
+                              <table
+                                class="container-fluid"
+                                role="presentation"
+                                align="center"
+                                width="254"
+                                border="0"
+                                cellspacing="0"
+                                cellpadding="0"
+                                style="width: 254px"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td align="center">
+                                      <a
+                                        href="https://r.mail.uptoo.fr/mk/cl/f/1AG3ad0c_Bu3a1l3rIW05tY-2HRaxnyBrjM3tGlUy1ybDOKQXfO2iz4TI8lc7jHXg-PFAkiMfILNzJ0gpEfQ1VBttmrzRiztuuakpf2SdRNz5L-EKE9hnIc0DQy0nfAmHOqPsfdQ51Z8FBNpLWyGFfHXUAYCXzpZZxaz3uSIzb4TmjiLr9RTTqqJVXy1_Ec1fzdRba5xT0P-nxwF9a0q8P0Xjy2gxz-IHH2G2SUHvmpPsIhzC-BJmTxEiFts6r8cJR5IfXF5Depkq_TO7RM-0tqeGLWY8_39owLSwhqh2HjpgDIhyfgGM6y8Dk3bCgaKZ6xwM8XJRcHXkw5OWEwk3ijlwxu7DsTr4EP5J5_kSJc7c1dX_rDkvxZNiBFOel8"
+                                        target="_blank"
+                                        title="Vers l&#39;article"
+                                        sib_link_id="11"
+                                      >
+                                        <img
+                                          src=".assets/da310b96d69959890357e507092788f50e0587c37d08212a8cb7198e340e55e4.jpg?e=FqQ4CM5UaxbvhZrAC6K5NmYC8GAy-JasnGErodOGjv_qwwrmFGDxXGUu9myBChrBMtuggZ9yfneBmCyIRRMgL4LZ7TmctHI2wtyJdWlTVKOnaKC80tEtIH75SXzKEsuXvEJP9mORXLRE32ZCantCKgu06b6I-TXR4OUWMYZ2"
+                                          width="254"
+                                          style="
+                                            width: 254px;
+                                            display: block;
+                                            border: none;
+                                            border-radius: 5px;
+                                          "
+                                          alt="Illustration vidéo"
+                                          class="img-fluid"
+                                          border="0"
+                                          sib_link_id="117"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td
+                                      align="left"
+                                      style="padding: 16px 0 0 0"
+                                    >
+                                      <h3
+                                        class="f18"
+                                        style="font-family: &#39;Open Sans&#39;, Arial, sans-serif; font-weight: bold; font-size: 18px;line-height: 24px; Padding:0;margin: 0;color: #283457;"
+                                      >
+                                        Comment négocier son salaire ?
+                                      </h3>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" style="padding: 8px 0 0 0">
+                                      <p
+                                        class="f16"
+                                        style="font-family: &#39;Open Sans&#39;, Arial, sans-serif;font-weight: normal; font-size: 16px;line-height: 20px; Padding:0;margin: 0;color: #8C3EDD;"
+                                      >
+                                        <a
+                                          href="https://r.mail.uptoo.fr/mk/cl/f/HNWe9THgdi1iQSxw0AQuAooEKAA2kSwBN7gA09uBkRgTPsr9xA-UqXW0wYTg9a4GLUgmXu9i27XaBhb4Z3Z5Z572wgn5puuiT12OOygwvvHA6YgfP0AHDUTl5Hz4G2FgSxLOydmtYsH7DYMaV8eLPeAVjX9Bgrp6BGkaSO1FcTZKH6KKHoqsv4-eD5dyuy-NeWDDtKB4fW5XFxWxMeX4l1XADBcbyXhboJJDlioIAod7NPE6PY4LAv1NCEyffAxW6DLajznUuJuj0nxh3mcnJ0PJrzwk530fOpge8SMp-G--1m3OO8lOwlE3yf7MbwaoUYwESNh8jieHEBjVUilrPboL49HYC9sdshbhmJlYDHMFm6rL-l1YPlyp3l146u4"
+                                          target="_blank"
+                                          title="Accéder à la vidéo"
+                                          style="color: #8c3edd"
+                                          sib_link_id="12"
+                                          >Voir la vidéo</a
+                                        >
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                            <th width="32" class="d-sm-none"></th>
+                            <th class="col-auto" valign="top">
+                              <table
+                                class="container-fluid"
+                                role="presentation"
+                                align="center"
+                                width="254"
+                                border="0"
+                                cellspacing="0"
+                                cellpadding="0"
+                                style="width: 254px"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td align="center">
+                                      <a
+                                        href="https://r.mail.uptoo.fr/mk/cl/f/Qcd7DyHno5L_IJ00UdoK-rG7j66zppcmZ6k3vglUYrZMc_dQZ5R1SJMtTlaZGL8FgyJhW3I7eHI_-Ju1Ul6m1jPURQR1VUZMtS_KXe8sCYD9Jn2xwJyRjCoLkKF8uVJlZs3ce1LJ-aeScIzU1rMD4OKdgiGm2AnHwWOHs4hKSyps-qQ6WPZ_cy3XCSaRrd9G0n3Aa8GwWsIaVIad8tadoSz74YuehQ8Q8FnSbaqPWthvGvLUi8fK2tYAt-UmlkOCoti0XMM3Gvshj2e3Q620Co0ZeKoANfS3rtKTXlcsLXmm7nMT1jrouVPzfkpPZZzG60B9BBq-RbnUnbHdYyHFi_mDfWCTCWHnnlsaDLl-IvlgU8TdLbryEBDnRmIlKyuYmOwcYtT_7bjymGw"
+                                        target="_blank"
+                                        title="Vers l&#39;article"
+                                        sib_link_id="13"
+                                      >
+                                        <img
+                                          src=".assets/ffe72c05011c8f20da4004ac96f57b6a470c55bec5158728311232fd250450e8.jpg?e=0aBp-4B-R8HYsr11a-JtMMq8qY0F3d6o4maPsbuOaUfLlLlPNpwzQ4uMvtjzQa-a-MnZYMDuxck0rZDJj9NBOWnlwaTzddlgsQTJ-SbeKGa1-lm7SF8hEefxKB6VLo4jpqKow19mZTUy23SCUV34VAXnShHCMO3xTxd8uibA"
+                                          width="254"
+                                          style="
+                                            width: 254px;
+                                            display: block;
+                                            border: none;
+                                            border-radius: 5px;
+                                          "
+                                          alt="Illustration vidéo"
+                                          class="img-fluid"
+                                          border="0"
+                                          sib_link_id="118"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td
+                                      align="left"
+                                      style="padding: 16px 0 0 0"
+                                    >
+                                      <h3
+                                        class="f18"
+                                        style="font-family: &#39;Open Sans&#39;, Arial, sans-serif; font-weight: bold; font-size: 18px;line-height: 24px; Padding:0;margin: 0;color: #283457;"
+                                      >
+                                        Concevoir un CV en béton
+                                      </h3>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" style="padding: 8px 0 0 0">
+                                      <p
+                                        class="f16"
+                                        style="font-family: &#39;Open Sans&#39;, Arial, sans-serif;font-weight: normal; font-size: 16px;line-height: 20px; Padding:0;margin: 0;color: #8C3EDD;"
+                                      >
+                                        <a
+                                          href="https://r.mail.uptoo.fr/mk/cl/f/teoeTJRqn7oJFQsu0DdYYBkO8gWKRk2C0TvhkVPtFqrP69qRwpvQIDieAAhz0EeA9TahZYbjCtXd4BZk4XKQV5NxD4UoeQrYPV1mBQG2dLxUhHc8Uh6M7OiwyC7jUqVdexPgUtWtQmVkqu-hnItsamkFHbQTVCImPhN9MJGEP-BJE8T0RzCnmLsqBN8IbuQSmsuPKpCuV8srik5M1jPivxrw0NVwBLmXsai7dXHjLclzNxRsSOUYox0PN4SMLfr64mPZfk7CgSOgPSB_XnJDmKbcwarDemCSfe55jSH2HssVX8fgvJCClUyFaOyO6BgLVf0i3R5gATeOfHfOW_AUaLhE2ipz7EPty57a1sjI4sFLW9fHsDpWgz-3Knf80RBZ3WqIKd9yH7hHc4Q"
+                                          target="_blank"
+                                          title="Accéder à la vidéo"
+                                          style="color: #8c3edd"
+                                          sib_link_id="14"
+                                          >Voir la vidéo</a
+                                        >
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      aria-hidden="true"
+                      height="32"
+                      style="font-size: 0; line-height: 0px"
+                    ></td>
+                  </tr>
+                  <tr>
+                    <td align="center">
+                      <table
+                        role="presentation"
+                        class="container"
+                        align="center"
+                        width="540"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="width: 540px"
+                      >
+                        <tbody>
+                          <tr>
+                            <th class="col-auto mb-32" valign="top">
+                              <table
+                                class="container-fluid"
+                                role="presentation"
+                                align="center"
+                                width="254"
+                                border="0"
+                                cellspacing="0"
+                                cellpadding="0"
+                                style="width: 254px"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td align="center">
+                                      <a
+                                        href="https://r.mail.uptoo.fr/mk/cl/f/sMvFJUXI6qcUInGlkC-OVYBeis-La43Y8QjYAp1BPafEMsftN2urVosYx8fgb6uPzlJNNY-HLvvM7sBgzPs18vdFYSKUSrN--OjhLc6P0vrJ47AmqCsDQ5ljdR0DkJvGPUNCnLrzulgS1L1INtfCUXn-KNh-VXnUo4ybNjbHB2Ah2RRCkGiGeT0hQ7yMZ0pqyGeFgGCrBn941Ij1zbt6XPYgECkdtfk5dW1xfgMi_WJeGErk8WqT9Icr_UlgF_MZc3L7fDbYi6FEOkKHmTGv7jI8t0_pQ-mRxoMTcHTOc66C4AO9_SjoB3ZxpLOHnW9RIXltblul5hpIHOz_t-fuArSM8fsbf_I2HoW32bU8EyVSjj2HEN70ZczQetz-gT8RK5ygRJsFJyTvS4s"
+                                        target="_blank"
+                                        title="Vers l&#39;article"
+                                        sib_link_id="15"
+                                      >
+                                        <img
+                                          src=".assets/a754541e46ee02587548efcffa3f60c05346013ae4dc306dd274cc6187245011.jpg?e=h-ZRi5SrC0urEUYboXD9qejmae1Te_cGYO1tggkDVjyDqMVRGQTZQC7uv_8UDJiQKSZM-3Kn4Rk_2ZT_8aVU4CLykkqG7oZ62X5xsQXSm4vxqaUXeZclkJp3gde020ypIACI_zQ8ATud0vZSm_HV5FwxGQypvW2sb0NVZlMs"
+                                          width="254"
+                                          style="
+                                            width: 254px;
+                                            display: block;
+                                            border: none;
+                                            border-radius: 5px;
+                                          "
+                                          alt="Illustration vidéo"
+                                          class="img-fluid"
+                                          border="0"
+                                          sib_link_id="119"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td
+                                      align="left"
+                                      style="padding: 16px 0 0 0"
+                                    >
+                                      <h3
+                                        class="f18"
+                                        style="font-family: &#39;Open Sans&#39;, Arial, sans-serif; font-weight: bold; font-size: 18px;line-height: 24px; Padding:0;margin: 0;color: #283457;"
+                                      >
+                                        Avoir confiance en soi lors d&#39;un
+                                        entretien d&#39;embauche
+                                      </h3>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" style="padding: 8px 0 0 0">
+                                      <p
+                                        class="f16"
+                                        style="font-family: &#39;Open Sans&#39;, Arial, sans-serif;font-weight: normal; font-size: 16px;line-height: 20px; Padding:0;margin: 0;color: #8C3EDD;"
+                                      >
+                                        <a
+                                          href="https://r.mail.uptoo.fr/mk/cl/f/2Q0dIUSd52iyYUAZdKikdfWSYJo1NJ_GmuUFzK6mNAfQ99kGw10Xx07Qu3XnfgxIBtDq64HIdeVIlVwtWfqQZGlNRGis4gQ0nVRbJqmuuZL7uaTn0_Trf0bOfPD80Oh5mgsQiB33HXJMdhA5KEuDW3HbX8QvrVaGxUd_aZIWNMmPUry2w6Sxjq_VLIQ3I90FaJ8Xg4XCUbR5bcAdUkVMv5fkaKv8ek_dn2fnqbQOhxWXX_A2wKx7tZ3QRHokGQNvwp2lHnGWY31Ygrh2VnfVqSM4AeOo64rNVg7gTzxLGFqxYgHbtKuC7t1xIWlysfDwL_RQfUuuGbtzaztO2opQwJoiRziJMpwgIcevc8t9787fiaB0sBDC9afEnF7WR4Lt6Qyah3zXzqLN5Xc"
+                                          target="_blank"
+                                          title="Accéder à la vidéo"
+                                          style="color: #8c3edd"
+                                          sib_link_id="16"
+                                          >Voir la vidéo</a
+                                        >
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                            <th width="32" class="d-sm-none"></th>
+                            <th class="col-auto" valign="top">
+                              <table
+                                class="container-fluid"
+                                role="presentation"
+                                align="center"
+                                width="254"
+                                border="0"
+                                cellspacing="0"
+                                cellpadding="0"
+                                style="width: 254px"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td align="center">
+                                      <a
+                                        href="https://r.mail.uptoo.fr/mk/cl/f/vJ0chigX7em4vMoheY-Se83Kvwn2zUOR81Bg2yzEHahVhJzbMo2nZhPclD5m72BkAiVSl6K1Pb5BNTolFR-jCMzHPU6WEYf8NxQ7_s6Z6MC0A_8DbshCNWcxuFAkcHZIg_MDCUpw6z8I2LTcOzZVkJ4KfNFYtvW1k4yr7maJ0_eBj9b_RRqsSaIx7uHbIIlsz7AMP0wEOoGh54cjL7Kj2OMB7q_8X42xqxqBaIoagBCeJqrNud8lFSv47AzsPLD5clevCJOaYry-egduerWcM5y3JSugqEVm0P_UIoVuLMwkqDSQHgY3nOS9XkfmYiHQTt4Ockt-lMOUXK0chyQ-B7RZWkYOicHSyaf_oL0ObEeagKEUVCMsUqUKzc9U_OShp0jkJZK7QrBz9OY"
+                                        target="_blank"
+                                        title="Vers l&#39;article"
+                                        sib_link_id="17"
+                                      >
+                                        <img
+                                          src=".assets/f1569f3c4ceb6ffee2c58347812e2cdd9707caa74f9d7f8a64458dd0aa9c0420.jpg?e=pDUjEc9-DzEx40Coc1go7She1vI9ZVs5d6AHFqssvyONymyPlRAvEQ8I3ICdlClmQOPb8fvcmcsTzQqe7WWfR-7GIL2bLWD5WWaUHFYJsrnQ8uCpZAXbNsoaEy6zToIT2fYNXoYNPXzEJUkHMT6Igm_-NzdNvmozxG7rRwi4"
+                                          width="254"
+                                          style="
+                                            width: 254px;
+                                            display: block;
+                                            border: none;
+                                            border-radius: 5px;
+                                          "
+                                          alt="Illustration vidéo"
+                                          class="img-fluid"
+                                          border="0"
+                                          sib_link_id="120"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td
+                                      align="left"
+                                      style="padding: 16px 0 0 0"
+                                    >
+                                      <h3
+                                        class="f18"
+                                        style="font-family: &#39;Open Sans&#39;, Arial, sans-serif; font-weight: bold; font-size: 18px;line-height: 24px; Padding:0;margin: 0;color: #283457;"
+                                      >
+                                        Réussir un entretien sans expérience
+                                      </h3>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" style="padding: 8px 0 0 0">
+                                      <p
+                                        class="f16"
+                                        style="font-family: &#39;Open Sans&#39;, Arial, sans-serif;font-weight: normal; font-size: 16px;line-height: 20px; Padding:0;margin: 0;color: #8C3EDD;"
+                                      >
+                                        <a
+                                          href="https://r.mail.uptoo.fr/mk/cl/f/T54euCbJJwazxxZpWk3Z076V1TYY14JysV1NLhQrA102PXySZwmj5lJn3fFRXonYTv6YcB6EtE7S-XdU3PArMMRaz_V-ijJapOLQ_f7GPUu-cx4By9c6xo6DtyD7ESxC5zrjLG8OQzLKwk64eovh-tPutnS-WZ2PI5RMrU_T-wLRKtTtYYV8HNczCGfzFXxGvn_SE06JVyu0D9TK00-48oNfIGOQk5J5_xuXgEWLcr6p9EYEPClSya-jkkfGodTwOl12xq663pSf1gDYsVFDAjUEt38eUsAOPwQoofF_WofyrBJAtWQAas7r9v4shVR9XXrRxK-tgtEJGD0y0k-jRtAfDmPd-nlzpNfVjVLSnc_yJD6u17Hvy_vkf44FM3pFQVm-Mt4WPS7tKj8"
+                                          target="_blank"
+                                          title="Accéder à la vidéo"
+                                          style="color: #8c3edd"
+                                          sib_link_id="18"
+                                          >Voir la vidéo</a
+                                        >
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                          </tr>
+                          <tr>
+                            <td
+                              align="center"
+                              style="padding: 32px 0 48px 0"
+                              colspan="4"
+                            >
+                              <table
+                                role="presentation"
+                                align="left"
+                                cellpadding="0"
+                                cellspacing="0"
+                                border="0"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      class="s-btn s-btn__outlined"
+                                      style="
+                                        border-radius: 4px;
+                                        background: #8c3edd;
+                                        text-align: center;
+                                      "
+                                    >
+                                      <a
+                                        class="s-btn s-btn__outlined"
+                                        href="https://r.mail.uptoo.fr/mk/cl/f/qioVxQ-7-44RoPRTDpKFui_pad5HirKdhzGcLl9GQEIzQPXVq28ZBpV-9xVbakqb2vogeylEyuax5OXenMtg9m3szeG-GiVLcA9wxHYDl6r6rBsgIn9n293OzlxWGij6jlenuh4rNZCVjhlX4S1uF91xuZhSX647rUapbwlWbA-R-fNqPWUcJXNlbxASpYOo5fGUaOsBMeSN6VTDbmISqWrLTRcFbjMWW982wF52QKsdWkFblATg-hAOIMbxMSxFtVk8vwEGB-6-MghNSClX9lKezmxfLRUxJxr4QDQAEJdmvArMjMbKMCsdB87Lpzb1_cQruMQF3o2064-s25hJhEQGQiPCCvCtRZwVVvQKDUo"
+                                        target="_blank"
+                                        title="Vers le site"
+                                        style="background: #8C3EDD; border: 0.5px solid #8C3EDD; font-family:&#39;Open Sans&#39;, Arial, sans-serif; font-size: 16px; line-height: 20px;font-weight: normal; color: #ffffff; text-align: center; text-decoration: none; Padding: 8px 18px; display: block; border-radius: 4px;"
+                                        sib_link_id="19"
+                                        >Voir les autres vidéos</a
+                                      >
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!--FIN CONSEILS RH-->
+
+      <!-- DEBUT QUIZ -->
+      <table
+        role="presentation"
+        align="center"
+        border="0"
+        cellspacing="0"
+        cellpadding="0"
+        style="background-color: #f4f4f4; width: 100%"
+      >
+        <tbody>
+          <tr>
+            <td align="center">
+              <table
+                role="presentation"
+                class="container-fluid"
+                align="center"
+                width="640"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                style="width: 640px; background-color: #ffffff"
+              >
+                <tbody>
+                  <tr>
+                    <td align="center" style="padding: 0 0 32px 0">
+                      <div
+                        class="fixiOS"
+                        style="width: 300px; height: 1px"
+                      ></div>
+                      <table
+                        role="presentation"
+                        class="container"
+                        align="center"
+                        width="540"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="width: 540px"
+                      >
+                        <tbody>
+                          <tr>
+                            <td align="left">
+                              <h2
+                                class="f22"
+                                style="color:#283457;font-family:&#39;Open Sans&#39;, Arial, sans-serif;text-align:left; font-weight:bold;font-size:22px;line-height:26px;Padding:0;margin:0;"
+                              >
+                                Le meilleur moyen de connaitre sa valeur sur le
+                                marché c&#39;est ...
+                              </h2>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="padding: 0 24px 0">
+                      <table
+                        border="0"
+                        class="container-fluid"
+                        cellpadding="0"
+                        cellspacing="0"
+                        role="presentation"
+                        width="540"
+                        style="
+                          width: 540px;
+                          background: #f5f6fa;
+                          border-collapse: separate;
+                          border: 1px solid #ccc;
+                          border-radius: 5px;
+                          overflow: hidden;
+                        "
+                      >
+                        <tbody>
+                          <tr>
+                            <td align="left">
+                              <table
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                width="592"
+                                class="container-fluid"
+                                role="presentation"
+                                style="width: 540px"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      class="quiz"
+                                      style=" color:#111; font:300 14px &#39;Open Sans&#39;, sans-serif;"
+                                      valign="middle"
+                                    >
+                                      <!--[if !mso]&gt;
+                            &lt;!-- -->
+                                      <input
+                                        type="radio"
+                                        name="quiz"
+                                        id="quiz-answer-radio-1"
+                                        class="quiz-radio-wrong"
+                                      />
+                                      <!--
+                            &lt;![endif]-->
+                                      <table
+                                        class="quiz-answer wrong"
+                                        border="0"
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        role="presentation"
+                                        style="width: 100%; table-layout: fixed"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              style="
+                                                padding: 12px 8px 12px 12px;
+                                                width: 20px;
+                                              "
+                                            >
+                                              <span
+                                                style="
+                                                  display: inline-block;
+                                                  width: 20px;
+                                                  height: 20px;
+                                                  margin-right: 4px;
+                                                  vertical-align: top;
+                                                  background: url(&#39;https://uptoo.fr/assets/images/newsletters/icon-radio.png&#39;)
+                                                    no-repeat center center;
+                                                  background-size: cover;
+                                                  border-radius: 50%;
+                                                "
+                                              ></span>
+                                            </td>
+                                            <td
+                                              style="font-family:&#39;Open Sans&#39;, Arial, sans-serif; font-size:16px; line-height:18px; font-weight:normal;color:#283457;"
+                                            >
+                                              <label
+                                                for="quiz-answer-radio-1"
+                                                id="qz-answer-label-1"
+                                                class="quiz-answer wrong"
+                                                style="
+                                                  display: inline-block;
+                                                  width: 100%;
+                                                  cursor: pointer;
+                                                  padding: 40px 0;
+                                                "
+                                                >Demander la grille des salaires
+                                                de son entreprise au service
+                                                comptabilité</label
+                                              >
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!--[if !mso]&gt;
+                            &lt;\!-->
+                                      <div
+                                        class="quiz-message-wrong"
+                                        style="padding:12px 12px 12px 40px;color:#111; font:200 16px/24px &#39;Open Sans&#39;, sans-serif;"
+                                      >
+                                        <strong>Mauvaise réponse</strong>
+                                        <!-- 
+                              &lt;![endif]-->
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td
+                                      class="quiz"
+                                      style="border-top:1px solid #ccc; color:#111; font:300 14px &#39;Open Sans&#39;, sans-serif;"
+                                      valign="middle"
+                                    >
+                                      <!--[if !mso]&gt;
+                            &lt;!-- -->
+                                      <input
+                                        type="radio"
+                                        name="quiz"
+                                        id="quiz-answer-radio-correct"
+                                        class="quiz-radio-correct"
+                                      />
+                                      <!--
+                            &lt;![endif]-->
+                                      <table
+                                        class="quiz-answer correct"
+                                        border="0"
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        role="presentation"
+                                        style="width: 100%; table-layout: fixed"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              style="
+                                                padding: 12px 8px 12px 12px;
+                                                width: 20px;
+                                              "
+                                            >
+                                              <span
+                                                style="
+                                                  display: inline-block;
+                                                  width: 20px;
+                                                  height: 20px;
+                                                  margin-right: 4px;
+                                                  vertical-align: top;
+                                                  background: url(&#39;https://uptoo.fr/assets/images/newsletters/icon-radio.png&#39;)
+                                                    no-repeat center center;
+                                                  background-size: cover;
+                                                  border-radius: 50%;
+                                                "
+                                              ></span>
+                                            </td>
+                                            <td
+                                              style="font-family:&#39;Open Sans&#39;, Arial, sans-serif; font-size:16px; line-height:18px; font-weight:normal;color:#283457;"
+                                            >
+                                              <label
+                                                for="quiz-answer-radio-correct"
+                                                class="quiz-answer correct"
+                                                style="
+                                                  display: inline-block;
+                                                  width: 100%;
+                                                  cursor: pointer;
+                                                  padding: 40px 0;
+                                                "
+                                                >Evaluer sa rémunération en
+                                                quelques clics avec le
+                                                calculateur de salaire
+                                                Uptoo</label
+                                              >
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <!--[if !mso]&gt;
+                            &lt;\!-->
+                                      <div
+                                        class="quiz-message-correct"
+                                        style="padding:12px 12px 12px 40px;color:#111; font:200 16px/24px &#39;Open Sans&#39;, sans-serif;"
+                                      >
+                                        <strong>Bonne réponse !</strong>
+                                        <br />
+                                        Le calculateur se base sur 90 000
+                                        salaires de commerciaux dans toute la
+                                        France. Obtenez en un coup d’œil les
+                                        rémunérations pratiquées dans votre
+                                        secteur
+                                      </div>
+                                      <!-- 
+                            &lt;![endif]-->
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <!--[if mso]&gt;
+            &lt;tr&gt;
+              &lt;td style=&#34;padding:16px 50px 0 50px ;color:#283457&#34;&gt;
+                &lt;strong&gt;La réponse 2 est la bonne&lt;/strong&gt; Le calculateur se base sur 90 000 salaires de commerciaux dans toute la France. Obtenez en un coup d’œil les rémunérations pratiquées dans votre secteur
+              &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;![endif]-->
+                  <!--[if !mso ]&gt;
+            &lt;!-->
+                  <tr>
+                    <td style="padding: 16px 50px 0 50px" align="center">
+                      <p
+                        style="margin:0; color:#283457; font:300 12px/16px &#39;Open Sans&#39;, sans-serif; font-style:italic; text-align:center;"
+                      >
+                        Si votre boîte de réception ne prend pas en charge ce
+                        quiz,<br class="d-sm-none" />
+                        la solution se trouve au bas de cette newsletter.
+                      </p>
+                    </td>
+                  </tr>
+                  <!--
+            &lt;![endif]-->
+                  <tr>
+                    <td align="center">
+                      <table
+                        role="presentation"
+                        class="container"
+                        align="center"
+                        width="540"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="width: 540px"
+                      >
+                        <tbody>
+                          <tr>
+                            <td
+                              align="center"
+                              style="padding: 16px 0 0 0"
+                              colspan="4"
+                            >
+                              <table
+                                role="presentation"
+                                align="left"
+                                cellpadding="0"
+                                cellspacing="0"
+                                border="0"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      class="s-btn s-btn__outlined"
+                                      style="
+                                        border-radius: 4px;
+                                        background: #8c3edd;
+                                        text-align: center;
+                                      "
+                                    >
+                                      <a
+                                        class="s-btn s-btn__outlined"
+                                        href="https://r.mail.uptoo.fr/mk/cl/f/wab2S4YjEp770yF3h4RWQkbb-oH00yxuC6F5uiAITocu3TBvoqPKC-7qpA-jHz2TPoI8j4d9DvXsu9uuUz3SCX0yg5Bf3TAo1IBpxYspxnC-qJDqYypzSWhdE7oJwkfF2MOwFACBfyeyFj-JE-Vl0RTeNMI1TK7Eeynh8TCqM1d3f8ujYuSBvtpOfh58ZcxIjoHFV1dw6m-3DG4i52_JdVc61F2I9u4SA692O3py6g97ENqI00NfVQkfhC2l0Kgai0Pd_ks_9v3_CBeWXN8VISXeZvRCYxtCcY8vludm0dg"
+                                        target="_blank"
+                                        title="Vers le site"
+                                        style="background: #8C3EDD; border: 0.5px solid #8C3EDD; font-family:&#39;Open Sans&#39;, Arial, sans-serif; font-size: 16px; line-height: 20px;font-weight: normal; color: #ffffff; text-align: center; text-decoration: none; Padding: 8px 18px; display: block; border-radius: 4px;"
+                                        sib_link_id="20"
+                                        >Calculer mon salaire</a
+                                      >
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- FIN QUIZ -->
+
+      <!--DEBUT TEMOIGNAGES  -->
+      <table
+        role="presentation"
+        align="center"
+        border="0"
+        cellspacing="0"
+        cellpadding="0"
+        style="background-color: #f4f4f4; width: 100%"
+      >
+        <tbody>
+          <tr>
+            <td align="center">
+              <table
+                role="presentation"
+                class="container-fluid"
+                align="center"
+                width="640"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                style="width: 640px; background-color: #ffffff"
+              >
+                <tbody>
+                  <tr>
+                    <td align="center" style="padding: 48px 0 32px 0">
+                      <div
+                        class="fixiOS"
+                        style="width: 300px; height: 1px"
+                      ></div>
+                      <table
+                        role="presentation"
+                        class="container"
+                        align="center"
+                        width="540"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="width: 540px"
+                      >
+                        <tbody>
+                          <tr>
+                            <td align="left">
+                              <h2
+                                class="f22"
+                                style="color:#283457;font-family:&#39;Open Sans&#39;, Arial, sans-serif;text-align:left; font-weight:bold;font-size:22px;line-height:26px;Padding:0;margin:0;"
+                              >
+                                Chaque année, 2 500 commerciaux nous font
+                                confiance pour trouver leur emploi
+                              </h2>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">
+                      <table
+                        role="presentation"
+                        class="container"
+                        align="center"
+                        width="540"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="width: 540px"
+                      >
+                        <tbody>
+                          <tr>
+                            <th class="col-auto mb-32" valign="top">
+                              <img
+                                src=".assets/c7e3512df3757ae507925d13ef9e26494408d8a98e905e5de7fd4e931d8cd3ec.png?e=Jl6cdNkuXlouzFHdRol1Sii2BosLYT5L-eXeH_ePKk1ZCr0OzFOy4jbovDwg-vLwHiVw403wnEgYs7wPEmSS8JNmVcj_HxcqJtmexmA75Eh0zrNk3UlCisXh7HDAZ1dfkth-a2J6vQQmw6h7Aig2IcI005swzzE3NBLydg"
+                                width="64"
+                                style="width: 64px; display: block"
+                                alt="Illustration Temoignage"
+                                border="0"
+                                sib_link_id="122"
+                              />
+                            </th>
+                            <th width="24" class="d-sm-none"></th>
+                            <th class="col-auto" valign="top">
+                              <table
+                                class="container-fluid"
+                                role="presentation"
+                                align="center"
+                                width="452"
+                                border="0"
+                                cellspacing="0"
+                                cellpadding="0"
+                                style="width: 452px"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td align="left">
+                                      <h3
+                                        class="f18"
+                                        class="f18"
+                                        style="font-family: &#39;Open Sans&#39;, Arial, sans-serif; font-weight: bold; font-size: 18px;line-height: 24px; Padding:0;margin: 0;color: #283457;"
+                                      >
+                                        Pauline
+                                      </h3>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" style="padding: 4px 0 0 0">
+                                      <p
+                                        class="f16"
+                                        style="font-family: &#39;Open Sans&#39;, Arial, sans-serif; font-weight: normal; font-size: 16px;line-height: 24px; Padding:0;margin: 0;color: #283457;"
+                                      >
+                                        Quelque soit le conseiller ou la
+                                        conseillère, les entretiens étaient
+                                        professionnels, efficients. Ponctualité,
+                                        réactivité, et amabilité, la diversité
+                                        des offres d&#39;emploi était elle aussi
+                                        appreciable. La plateforme est très
+                                        intuitive et permet un suivi
+                                        personnalisé agréable. Je ne saurai que
+                                        trop recommander de passer par UpToo !
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                          </tr>
+                          <tr>
+                            <td
+                              aria-hidden="true"
+                              height="32"
+                              style="font-size: 0; line-height: 0px"
+                            ></td>
+                          </tr>
+                          <tr>
+                            <th class="col-auto mb-32" valign="top">
+                              <img
+                                src=".assets/b32b0e06f810df972bda9e6868e40d55e76547c00b38bfff23cfdb48707952d5.png?e=1rYoQ1yp8MpHdiJQ-8pdxf3dhklv_E0VC6KV6BynOvX4n8SZlnJjTN0zIrrluHYmd_lbpYvLve_7ZUktL3J38eEfn0kR_JYXBoloXU1fAiZZA24NqZWCyuKB4sbC4AHnwbvmrUiqRClLF9k9VXB0t9Xqw51h3dLQrKUXuA"
+                                width="64"
+                                style="width: 64px; display: block"
+                                alt="Illustration Temoignage"
+                                border="0"
+                                sib_link_id="121"
+                              />
+                            </th>
+                            <th width="24" class="d-sm-none"></th>
+                            <th class="col-auto" valign="top">
+                              <table
+                                class="container-fluid"
+                                role="presentation"
+                                align="center"
+                                width="452"
+                                border="0"
+                                cellspacing="0"
+                                cellpadding="0"
+                                style="width: 452px"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td align="left">
+                                      <h3
+                                        class="f18"
+                                        style="font-family: &#39;Open Sans&#39;, Arial, sans-serif; font-weight: bold; font-size: 18px;line-height: 24px; Padding:0;margin: 0;color: #283457;"
+                                      >
+                                        Stanislas
+                                      </h3>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" style="padding: 4px 0 0 0">
+                                      <p
+                                        class="f16"
+                                        style="font-family: &#39;Open Sans&#39;, Arial, sans-serif; font-weight: normal; font-size: 16px;line-height: 24px; Padding:0;margin: 0;color: #283457;"
+                                      >
+                                        Très bon cabinet. Un remerciement
+                                        spécial pour Maxime Plazenet et son bon
+                                        accompagnement jusqu&#39;à
+                                        l&#39;obtention de mon nouveau poste.
+                                        Merci !
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                          </tr>
+                          <tr>
+                            <td
+                              aria-hidden="true"
+                              height="32"
+                              style="font-size: 0; line-height: 0px"
+                            ></td>
+                          </tr>
+                          <tr>
+                            <th class="col-auto mb-32" valign="top">
+                              <img
+                                src=".assets/342b00daac20b5fa2f8e373377c473c2b3a0403f3f058319f43c4672023beb43.png?e=_B7L8LKvgkok4wBnhlH0hFTwyLrBGFohus670-qLUrJqzi_mPqCH0G7Wza7LZ4wLhu0DcOGMXiymn2rSW9QqOyakXoRi_5_LRZcGLXgJ7oYBCBy5HP8XKZNoe9sFKii4QiWm-WdQAy_smTu9v32bpkZKF3ETcsR9b6NytrI"
+                                width="64"
+                                style="width: 64px; display: block"
+                                alt="Illustration Temoignage"
+                                border="0"
+                                sib_link_id="123"
+                              />
+                            </th>
+                            <th width="24" class="d-sm-none"></th>
+                            <th class="col-auto" valign="top">
+                              <table
+                                class="container-fluid"
+                                role="presentation"
+                                align="center"
+                                width="452"
+                                border="0"
+                                cellspacing="0"
+                                cellpadding="0"
+                                style="width: 452px"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td align="left">
+                                      <h3
+                                        class="f18"
+                                        style="font-family: &#39;Open Sans&#39;, Arial, sans-serif; font-weight: bold; font-size: 18px;line-height: 24px; Padding:0;margin: 0;color: #283457;"
+                                      >
+                                        Anne-Marie
+                                      </h3>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" style="padding: 4px 0 0 0">
+                                      <p
+                                        class="f16"
+                                        style="font-family: &#39;Open Sans&#39;, Arial, sans-serif; font-weight: normal; font-size: 16px;line-height: 24px; Padding:0;margin: 0;color: #283457;"
+                                      >
+                                        Le cabinet Uptoo a été un support
+                                        parfait pour le processus de
+                                        recrutement. Je remercie
+                                        particulièrement Enzo qui a été présent,
+                                        motivant et rassurant à chaque instant.
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                          </tr>
+                          <tr>
+                            <td
+                              align="center"
+                              style="padding: 32px 0 48px 0"
+                              colspan="4"
+                            >
+                              <table
+                                role="presentation"
+                                align="left"
+                                cellpadding="0"
+                                cellspacing="0"
+                                border="0"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      class="s-btn s-btn__outlined"
+                                      style="
+                                        border-radius: 4px;
+                                        background: #8c3edd;
+                                        text-align: center;
+                                      "
+                                    >
+                                      <a
+                                        class="s-btn s-btn__outlined"
+                                        href="https://r.mail.uptoo.fr/mk/cl/f/fW9uRHluiWUYRE1g_mOu3DI0sRogZPRbIjR-zHI5zvZG5Owe0hHaPPzKqp3UcKvSr5ha5X3hA02LDKn3RuJKKj2fE_eHmhKOvzZsnt6DXXCs08tb4ddaU4-xKN57mDw5DeLsf9tybwf55_VfyecJGldVvHeIV-sD_9RF37ZCAu__pDlbPhogicckvv8yLlRHBinIl4SdStUQaq4AOaXbG0EmXNfVOtOIN2y9wEDMji2GngurCKqT_RWm30-zB6yaLGy4IbZpeX-8Fqwj4SjrBx_HvFoHdo4y5DNn"
+                                        target="_blank"
+                                        title="Vers le site"
+                                        style="background: #8C3EDD; border: 0.5px solid #8C3EDD; font-family:&#39;Open Sans&#39;, Arial, sans-serif; font-size: 16px; line-height: 20px;font-weight: normal; color: #ffffff; text-align: center; text-decoration: none; Padding: 8px 18px; display: block; border-radius: 4px;"
+                                        sib_link_id="21"
+                                        >Accéder à Uptoo Jobs</a
+                                      >
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!--FIN TEMOIGNAGES -->
+
+      <!--DEBUT ALERTE-->
+      <table
+        role="presentation"
+        class="container-fluid"
+        align="center"
+        border="0"
+        cellspacing="0"
+        cellpadding="0"
+        width="100%"
+        style="background-color: #f5f5f5; width: 100%"
+      >
+        <tbody>
+          <tr>
+            <td align="center">
+              <table
+                role="presentation"
+                class="container-fluid"
+                align="center"
+                width="640"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                style="width: 640px; background-color: #ffffff"
+              >
+                <tbody>
+                  <tr>
+                    <td style="padding: 0 0 48px 0">
+                      <div
+                        class="fixiOS"
+                        style="width: 320px; height: 0px"
+                      ></div>
+                      <table
+                        role="presentation"
+                        class="container"
+                        align="center"
+                        width="540"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="
+                          width: 540px;
+                          background-color: #8c3edd;
+                          border-radius: 5px;
+                        "
+                      >
+                        <tbody>
+                          <tr>
+                            <td align="center" style="padding: 32px 0">
+                              <table
+                                role="presentation"
+                                class="container"
+                                align="center"
+                                width="476"
+                                border="0"
+                                cellspacing="0"
+                                cellpadding="0"
+                                style="width: 476px"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td align="center">
+                                      <a
+                                        href="https://r.mail.uptoo.fr/mk/cl/f/-pvvzdYCULtQudpAPPBns4CvV4coJRPFRrCbZ4cMwpRqF1_R8aw6nRyZcvaOuac1LsnGH45jjjhCNm4IzelC8UEy8vUG56bDg6an-gsOKBgA5C6jpStOi1aoCsnsrjajPr8IWQmnCjXJ81-70prPSm9Fy7ZbEzDysI3vQO7puxtqJZdJZghB0thqHM3SUHXRLszxpFvmjQMER9pkT5ZttkOMcyU9_yR4XXrFMgZV-0yKR-Nwt5_U3nNB4_tIR6y8_eJUbuYtZhVLm6ulaWDQZEa1pPGbvXjCQBvd4zUVkw"
+                                        alt="Uptoo Jobs"
+                                        target="blank"
+                                        title="Accéder à Uptoo Jobs"
+                                        sib_link_id="22"
+                                      >
+                                        <img
+                                          src=".assets/4fed2e4bbca49926d50a05546860e41ebc07072ef41846caf8c5e528942e2f57.png?e=yafNpgWnyVtKaZjlih64WTzLtBJdvQ6tk02RhRGc5ZxyuHo3khIr283WEH6rfZsG9EI0khyjwyuyVMNeMs4KB_OWxVhDCiETYkx5rHRdQdM2z3CWLjGej9slEw2c6lRQn9KGwnoTQ7dJecopld5tcQtNaEp847yIIjfDWiaLbeQu"
+                                          width="48"
+                                          style="width: 48px; display: block"
+                                          alt="Logo Uptoo"
+                                          border="0"
+                                          sib_link_id="115"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td
+                                      align="center"
+                                      style="padding: 24px 0 16px 0"
+                                    >
+                                      <h2
+                                        class="f22"
+                                        style="color:#ffffff;font-family:&#39;Open Sans&#39;, Arial, sans-serif; font-weight:bold;font-size:22px;line-height:26px;Padding:0;margin:0;"
+                                      >
+                                        Vous n&#39;avez pas envie de candidater
+                                        maintenant ?
+                                      </h2>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="center">
+                                      <p
+                                        class="f16"
+                                        style="font-family: &#39;Open Sans&#39;,&#39;Arial&#39;,Sans-serif; font-size: 16px;line-height: 20px;margin: 0;Padding:0;color:#ffffff"
+                                      >
+                                        Dites-nous ce qui vous ferait plaisir
+                                        !<br class="d-sm-none" />
+                                        Nous vous avertirons lorsque nous aurons
+                                        une offre qui vous correspond.
+                                      </p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="padding: 24px 0 0 0">
+                                      <table
+                                        role="presentation"
+                                        align="center"
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        border="0"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              class="s-btn s-btn__outlined_inv"
+                                              style="
+                                                border-radius: 4px;
+                                                background: #ffffff;
+                                                text-align: center;
+                                              "
+                                            >
+                                              <a
+                                                class="s-btn s-btn__outlined_inv"
+                                                href="https://r.mail.uptoo.fr/mk/cl/f/PzG77F1Dt3sfTUIefNB9l0kji4SuZ00fI9IXLqx2Slz7pxhBDN15u6y76-b11XT50LhpDTRx3Egw5zCtDYzD7VA4_p8S9yJvH8XEWWWpzchb1wTstuuWh97itGZ4Saj2KzKNYNTxOJ_Pjph1fjFrdLWe0uAdQAxdYEVipfZuUvSWrYNSSBOYZzgY3et5PAlBusCXCR4Sd9EkP5T68E83Z4MQfxvrkZgiSH-rvMGx6rpoDy-_Bz6JVKuhEEDugI6GHOWUbumx4VHlMU3WCBkUmPes2lyq_wr36cFJ"
+                                                target="_blank"
+                                                title="Vers le site"
+                                                style="background: #ffffff; border: 0.5px solid #ffffff; font-family:&#39;Open Sans&#39;, Arial, sans-serif; font-size: 16px; line-height: 20px;font-weight: normal; color: #8C3EDD; text-align: center; text-decoration: none; Padding: 8px 18px; display: block; border-radius: 4px; white-space: nowrap;"
+                                                sib_link_id="23"
+                                                >Créer mes alertes</a
+                                              >
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!--FIN ALERTE-->
+
+      <!--DEBUT FOOTER -->
+      <table
+        role="presentation"
+        align="center"
+        border="0"
+        cellspacing="0"
+        cellpadding="0"
+        style="background-color: #f4f4f4; width: 100%"
+      >
+        <tbody>
+          <tr>
+            <td align="center" style="padding: 32px 0 0 0">
+              <table
+                role="presentation"
+                align="center"
+                border="0"
+                class="container-fluid"
+                width="640"
+                cellspacing="0"
+                cellpadding="0"
+                style="
+                  width: 640px;
+                  background-color: #ffffff;
+                  border-radius: 4px;
+                "
+              >
+                <tbody>
+                  <tr>
+                    <td align="center" style="padding: 48px 0">
+                      <div
+                        class="fixiOS"
+                        style="width: 320px; height: 0px"
+                      ></div>
+                      <table
+                        role="presentation"
+                        align="center"
+                        width="540"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        class="container"
+                        style="width: 540px"
+                      >
+                        <tbody>
+                          <tr>
+                            <td align="left">
+                              <p
+                                style="color:#283457;font-family:&#39;Open Sans&#39;, Arial, sans-serif; font-weight:normal;font-size:16px;line-height:24px;Padding:0;margin:0;"
+                              >
+                                <strong>Vous avez la parole</strong> 🎤 <br />
+                                Vous souhaitez que nous abordions un sujet
+                                particulier, nous partager vos retours
+                                d&#39;experiences ou nous donner votre avis ?
+                                Rien de plus simple répondez à cet email et nous
+                                vous lirons !
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" style="padding: 24px 0 0 0">
+                              <p
+                                style="color:#283457;font-family:&#39;Open Sans&#39;, Arial, sans-serif; font-weight:normal;font-size:16px;line-height:24px;Padding:0;margin:0;"
+                              >
+                                <strong>La réponse 2 est la bonne</strong> 💡
+                                <br />
+                                Le calculateur se base sur 90 000 salaires de
+                                commerciaux dans toute la France. Obtenez en un
+                                coup d’œil les rémunérations pratiquées dans
+                                votre secteur
+                              </p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center">
+              <table
+                role="presentation"
+                align="center"
+                border="0"
+                class="container-fluid"
+                width="640"
+                cellspacing="0"
+                cellpadding="0"
+                style="width: 640px"
+              >
+                <tbody>
+                  <tr>
+                    <td align="center">
+                      <div
+                        class="fixiOS"
+                        style="width: 320px; height: 0px"
+                      ></div>
+                      <table
+                        role="presentation"
+                        align="center"
+                        width="540"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        class="container"
+                        style="width: 540px"
+                      >
+                        <tbody>
+                          <tr>
+                            <td align="center" style="padding: 32px 0 24px 0">
+                              <p
+                                style="
+                                  font-family: Arial;
+                                  font-weight: bold;
+                                  font-size: 14px;
+                                  padding: 0;
+                                  margin: 0;
+                                "
+                              >
+                                <a
+                                  href="https://r.mail.uptoo.fr/mk/un/go_jevmL3EoGP_QnswkUxIqx-O0tUl1E9attvLAp7Dt2o0yILmwE1Okw184yyXtWRolb-grevmH10xVZTnghy63TYA2zT0BEpF9xHpK-kBmnD_aRRBbr3ezMcXkOuaHycGYiPhv0z6eLnXoEuDQfGtQooaFnjlnkMeLnLsRvd6A_"
+                                  style="
+                                    text-decoration: underline;
+                                    color: #666666;
+                                  "
+                                  target="_blank"
+                                  title="unsubscribe"
+                                >
+                                  Se désabonner
+                                </a>
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              align="left"
+                              style="padding: 0 0 32px 0"
+                              colspan="4"
+                            >
+                              <p
+                                style="
+                                  font-family: Arial;
+                                  font-weight: normal;
+                                  font-size: 12px;
+                                  padding: 0;
+                                  margin: 0;
+                                  color: #666666;
+                                "
+                              >
+                                Conformément aux dispositions des articles 38 et
+                                suivants de la loi “Informatique et Libertés” n°
+                                2018-493 du 20 juin 2018, chaque personne
+                                dispose à tout moment d’un droit d’accès, de
+                                communication, de rectification,
+                                d’actualisation, de suppression ou de
+                                portabilité des données personnelles le
+                                concernant. Pour exercer l’un de ces droits,
+                                vous pouvez adresser un courrier électronique à
+                                l’adresse : contact@uptoo.fr. Dans une logique
+                                de respect de la vie privée de ses Utilisateurs,
+                                Uptoo s&#39;engage à ce que la collecte et le
+                                traitement d&#39;informations personnelles,
+                                effectués au sein du présent Site, soient
+                                effectués conformément à la loi n° 2018-493 du
+                                20 juin 2018 relative à l&#39;informatique, aux
+                                fichiers et aux libertés, dite Loi
+                                &#34;Informatique et Libertés&#34;. A ce titre,
+                                le Uptoo fait l&#39;objet d&#39;une déclaration
+                                à la CNIL sous le numéro 1761825 v 0.
+                              </p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!--FIN FOOTER-->
+    </div>
+  </body>
+</html>
