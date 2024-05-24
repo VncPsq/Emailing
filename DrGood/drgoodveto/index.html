@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+	<title>Dr Good! Veto</title>
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="x-apple-disable-message-reformatting" /> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<style type="text/css">
+		
+		/*DEFAULT CSS*/
+		body { text-size-adjust:none; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; padding:0; margin:0; background-color:#E5E5E5 !important; font-weight: normal}
+		.ReadMsgBody { width:100%; }
+		.ExternalClass { width:100%; }
+		.linkHeader a { color:#ffffff; text-decoration:none; }
+		.linkBody  a{ color:#ffffff !important;  text-decoration:none !important; }
+		.linkFooter a { color:#ffffff; text-decoration:none; }
+		.linkNom a { color:#ffffff; text-decoration:none; }
+		b{font-weight: 700}
+		.menuHover:hover{background-color: #570741; color: #FFFFFF!important}
+		.menuHoverInv:hover{background-color: #FFFFFF!important; color: #570741!important}
+		.d-lg-none{
+			display:none!important;
+			}
+
+		/*FONTS*/
+		@media screen{
+
+			.foo{/*ORANGE MAIL*/}
+
+			@font-face {
+			  font-family: 'Roboto';
+			  font-style: normal;
+			  font-weight: 400;
+			  font-display: swap;
+			  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+			  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+
+			@font-face {
+			  font-family: 'Roboto';
+			  font-style: normal;
+			  font-weight: 700;
+			  font-display: swap;
+			  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+			  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+
+			/* Regular */
+			@font-face {
+			  font-family: 'Playfair Display';
+			  font-style: normal;
+			  font-weight: 400;
+			  src: url(https://fonts.gstatic.com/s/playfairdisplay/v20/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');
+			  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+
+			/* medium */
+			@font-face {
+			  font-family: 'Playfair Display';
+			  font-style: normal;
+			  font-weight: 500;
+			  src: url(https://fonts.gstatic.com/s/playfairdisplay/v20/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');
+			  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+
+			/* semibold */
+			@font-face {
+			  font-family: 'Playfair Display';
+			  font-style: normal;
+			  font-weight: 600;
+			  src: url(https://fonts.gstatic.com/s/playfairdisplay/v20/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');
+			  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+
+			/* bold */
+			@font-face {
+			  font-family: 'Playfair Display';
+			  font-style: normal;
+			  font-weight: 700;
+			  src: url(https://fonts.gstatic.com/s/playfairdisplay/v20/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');
+			  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+		}
+
+		@media only screen and (max-width:320px) {
+			.foo{/*ORANGE MAIL*/}
+			.fixiOS {width: 320px!important;}
+		}
+	
+		@media only screen and (min-width:321px) and (max-width:415px) {
+			.foo{/*ORANGE MAIL*/}
+			.fixiOS {width: 414px!important;}
+		}
+
+		/*Full size podcast Desktop*/
+		@media screen and (min-width:640px) and (max-width: 800px) {
+			.full_bg_podcast{width:100%!important}
+		}
+
+		/*Responsive*/
+		@media screen and (max-width:640px) {
+			.container{width:90%!important;min-width:310px;}
+		}
+
+		@media screen and (max-width:640px) {
+			.container-fluid{width:100%!important}
+		}
+
+		@media screen and (max-width:640px) {
+
+			.col-0{width: 0px}
+			.col-sm-1{width: 40px}
+			.col-sm-2{width: 80px}
+			.col-sm-3{width: 120px}
+			.col-sm-4{width: 160px}
+			.col-sm-5{width: 200px}
+			.col-sm-6{width: 240px}
+			.col-sm-7{width: 280px}
+			.col-sm-8{width: 320px}
+			.col-auto{
+			display:block;
+			width:100%;
+
+			}
+					/* stack top */
+		    .display-header {
+		         width: 100%!important;
+		         display: table-header-group!important;
+		    }
+		    /* stack bottom */
+		    .display-footer {
+		         width: 100%!important;
+		         display: table-footer-group!important;
+		    }
+			.d-sm-none{
+			display:none!important;
+			}
+			.d-block{
+				display: block!important;
+			}
+			.img-fluid{
+			width:100%!important;
+			height:auto!important;
+			}
+			.hauto{
+			height:auto!important;
+			}
+			.f12{
+			font-size:12px!important;
+			}
+			.f14{
+			font-size:14px!important;
+			line-height: 24px!important;
+			}
+			.f16{
+			font-size:16px!important;
+			line-height: 26px!important;
+			}
+			.f18{
+			font-size:18px!important;
+			line-height: 28px!important;
+			}
+			.f28{
+			font-size:28px!important;
+			}
+			.f32{
+			font-size:32px!important;
+			line-height: 1.3em!important;
+			}
+			.text-center{text-align:center!important}
+
+			.ml-8{margin-left: 8px!important}
+			.ml-16{margin-left: 16px!important}
+			.mr-8{margin-right: 8px!important}
+			.mr-16{margin-right: 16px!important}
+			.mt-8{margin-top: 8px!important}
+			.mt-16{margin-top: 16px!important}
+			.mt-32{margin-top: 32px!important}
+			.mt-64{margin-top: 64px!important}
+			.mb-0{margin-bottom: 0px!important}
+			.mb-8{margin-bottom: 8px!important}
+			.mb-16{margin-bottom: 16px!important}
+			.mb-32{margin-bottom: 32px!important}
+
+		}
+
+	</style>
+	<!--[if mso]>
+		<xml>
+		  <o:OfficeDocumentSettings>
+		    <o:PixelsPerInch>96</o:PixelsPerInch>
+		  </o:OfficeDocumentSettings>
+		</xml>
+	<![endif]-->
+
+</head>
+<body data-actito-log-opening="true">
+<div lang="fr">
+	<!--PRE-HEADER-->
+	<table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color:#F5F5F5;width: 100%;">
+		<tbody>
+			<tr>
+				<td align="center">
+					<table role="presentation" align="center" width="640" border="0" cellspacing="0" cellpadding="0" class="container-fluid" style="width: 640px;">
+						<tbody>
+							<tr>
+								<td align="center" valign="top">
+									<div class="fixiOS" style="width:320px; height:1px"> </div>
+									<div style="display:none;font-size:1px;color:#ffffff;line-height:1px;font-family: 'Montserrat', Arial, sans-serif; max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;">
+										{{sending.preview}}
+										
+									</div>
+									<div style="display: none; max-height: 0px; overflow: hidden;">&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td height="10" align="center" style="text-align:center;font-family: 'Roboto', Arial, sans-serif; font-weight:normal;font-size:11px;Padding:8px 0 10px 0;" valign="top">
+									<a href="${Webversion}" border="0" style="font-family: 'Roboto', Arial, sans-serif;text-decoration:underline; color:#666666;" target="_blank" title="LienMirroir" data-actito-link-name="LienMirroir">
+										Consulter la version en ligne
+									</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!--FIN PRE-HEADER-->
+	<!--HEADER-->
+	<table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color:#F5F5F5;width: 100%;">
+		<tbody>
+			<tr>
+				<td align="center">
+					<table role="presentation" class="container-fluid"  align="center" width="640" border="0" cellspacing="0" cellpadding="0" style="width: 640px;background-color:#FFFFFF;">
+						<tbody>
+							<div class="fixiOS" style="width:320px; height:0px"></div>
+							<tr>
+								<th class="col-auto mb-32" align="center" valign="top">
+									<a href="#" target="_blank" title="Header DrGood Veto" style="border:none;" border="0">
+										<img src="header.png" title="Header DrGood Veto" class="img-fluid" width="320" style="display: block;width: 320px" alt="Header DrGood Veto">
+									</a>
+								</th>
+								<th class="col-auto" align="center"  width="320" style="Padding:32px 0 32px 0" valign="bottom" >
+									<table role="presentation" class="container"  align="center" width="256" border="0" cellspacing="0" cellpadding="0" style="width: 256px;margin:auto;">
+									<tbody>
+										<tr>
+											<td align="left" style="Padding:0 0 16px 0">
+												<img src="quot_intro.png" title="Quote Intro" width="46" style="display: block;width: 46px" alt="Quote Intro">	
+											</td>
+										</tr>
+										<tr>
+											<td align="center">
+												<h2 style="text-align: left;font-family: 'Playfair Display', serif; font-weight: bold; font-size: 26px; line-height: 35px;Padding:0;margin: 0">
+													Cessons de vouloir décrypter le comportement du chat à travers le prisme du chien										
+												</h2>	
+											</td>
+										</tr>
+										<tr>
+											<td align="right" style="Padding:24px 0 0 0">
+												<h2 style="text-align: right;font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px;font-style: italic;color: #B30181; line-height: 24px;Padding:0;margin: 0">
+													Hélène Gateau									
+												</h2>
+											</td>
+										</tr>
+										<tr>
+											<td align="right" style="Padding:4px 0 0 0">
+												<p style="font-family: 'Roboto-Regular', 'Roboto', Arial, sans-serif; font-weight: normal; font-size: 16px; Padding:0;margin: 0;color: #000000;" >					Vétérinaire
+												</p>	
+											</td>
+										</tr>
+									</tbody>
+									</table>
+								</th>
+							</tr>
+							<tr>
+								<td align="center" colspan="2" >
+									<table border="0" role="presentation" align="center" cellspacing="0" cellpadding="0" style="background-color: #D3D3D3;width: 100%;" width="100%">
+										<tr>
+											<td align="center"  height="1" style="line-height:1px;font-size:1px;">&nbsp;</td>
+										</tr>
+									</table>
+								</td>
+							</tr>							
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!--FIN HEADER-->
+	<!--HEADER-->
+	<table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color:#F5F5F5;width: 100%;">
+		<tbody>
+			<tr>
+				<td align="center">
+					<table role="presentation" class="container-fluid"  align="center" width="640" border="0" cellspacing="0" cellpadding="0" style="width: 640px;">
+						<tbody>
+							<div class="fixiOS" style="width:320px; height:0px"></div>
+							<tr>
+								<td align="center"style="Padding:18px 0 40px 0" >
+									<table border="0"  class="container"  role="presentation" align="center" cellspacing="0" cellpadding="0" style="width: 576px;" width="576">
+										<tr>
+											<td align="right">
+												<p style="font-family: 'Roboto-Regular', 'Roboto', Arial, sans-serif; font-weight: normal; font-size: 14px; Padding:0;margin: 0;color: #000000;" >					<b>Hors série #1</b> / 25.05.2020
+												</p>	
+											</td>
+										</tr>
+										<tr>
+											<td align="left" style="Padding:0 0 8px 0">
+												<h2 style="text-align: left;font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px;font-style: italic;color: #B30181; line-height: 24px;Padding:0;margin: 0">
+													Sommaire									
+												</h2>
+											</td>
+										</tr>
+										<tr>
+											<td align="left" style="Padding:0 0 6px 0">
+												<p style="font-family: 'Roboto-Regular', 'Roboto', Arial, sans-serif; font-weight: normal; font-size: 14px; Padding:0;margin: 0;color: #000000;" >
+													<span style="color: #B30181;font-weight: bold;font-size: 14px">1.</span> <span style="text-decoration: underline;">À la maison, mon chat m’ignore, pourquoi ?</span>
+
+												</p>	
+											</td>
+										</tr>
+										<tr>
+											<td align="left" style="Padding:0 0 6px 0">
+												<p style="font-family: 'Roboto-Regular', 'Roboto', Arial, sans-serif; font-weight: normal; font-size: 14px; Padding:0;margin: 0;color: #000000;" >
+													<span style="color: #B30181;font-weight: bold;font-size: 14px">2.</span> <span style="text-decoration: underline;">Podcast : J’ai rencontré<span>
+
+												</p>	
+											</td>
+										</tr>
+										<tr>
+											<td align="left" style="Padding:0 0 6px 0">
+												<p style="font-family: 'Roboto-Regular', 'Roboto', Arial, sans-serif; font-weight: normal; font-size: 14px; Padding:0;margin: 0;color: #000000;" >
+													<span style="color: #B30181;font-weight: bold;font-size: 14px">3.</span> <span style="text-decoration: underline;">Billet d’humeur</span>
+
+												</p>	
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>							
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!--FIN HEADER-->
+	<!--DEBUT EDITO-->
+	<table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color:#F5F5F5;width: 100%;">
+		<tbody>
+			<tr>
+				<td align="center">
+					<table role="presentation" class="container-fluid"  align="center" width="640" border="0" cellspacing="0" cellpadding="0" style="width: 640px;background-color: #FFFFFF">
+						<tbody>
+							<div class="fixiOS" style="width:320px; height:0px"></div>
+							<tr>
+								<td align="center">
+									<table role="presentation" class="container"  align="center" width="520" border="0" cellspacing="0" cellpadding="0" style="width: 520px;">
+										<tr>
+											<td align="left" style="Padding:64px 0 32px 0" >
+												<h1  style="font-family: 'Playfair Display', Times, Times New Roman, serif; font-size: 36px; font-weight:bold;margin:0;line-height: 48px;Padding:0; color:#000000;">
+													À la maison, mon chat m’ignore, pourquoi ?
+												</h1>
+											</td>
+										</tr>
+										<tr>
+											<td align="left" style="Padding:0 0 32px 0">
+											<p style="font-family: 'Roboto-Bold', 'Roboto', Arial, sans-serif; font-weight: bold; font-size: 14px; line-height: 20px;Padding:0;margin: 0">
+												Depuis quelques temps, un chat partage votre vie de famille, pour le plus grand bonheur de tous. Ou presque ! Car votre chat a ses têtes … et vous n’en faites pas partie. De retour à la maison après une journée de travail, votre chat ne vous accueille jamais. Vous l’appelez, mais rien à faire, il ne vous calcule pas. Quant aux câlins, n’en parlons pas ! Pourquoi est-il si ingrat ?
+											</p>
+											</td>
+										</tr>
+										<tr>
+											<td align="left" style="Padding:0 0 16px 0" >
+												<h2  style="font-family: 'Playfair Display', Times, Times New Roman, serif; font-size: 24px; font-weight:bold;margin:0;line-height: 32px;Padding:0; color:#000000;">
+													Un chat n’est pas… un chien !
+												</h2>
+											</td>
+										</tr>
+										<tr>
+											<td align="left" style="Padding:0 0 32px 0">
+											<p style="font-family: 'Roboto', Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 20px;Padding:0;margin: 0">
+												Tout d’abord, les chats reconnaissent leur nom au milieu d’autres mots aux consonances similaires. Alors si vous l’appelez et qu’il ne répond pas, c’est volontaire, il vous ignore. 
+											</p>
+											</td>
+										</tr>										
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<table role="presentation" class="container-fluid"  align="center" width="640" border="0" cellspacing="0" cellpadding="0" style="width: 640px;background-color:#FFFFFF;">
+					<tbody>
+						<div class="fixiOS" style="width:320px; height:0px"></div>
+						<tr>
+							<td align="center">
+								<table role="presentation" class="container-fluid"  align="center" width="552" border="0" cellspacing="0" cellpadding="0" style="width: 552px;">
+								<tbody>
+									<tr>
+										<th class="col-auto mt-32" width="275" align="center" >
+											<table role="presentation" class="container"  align="center" width="275" border="0" cellspacing="0" cellpadding="0" style="width: 275px;">
+												<tr>
+													<td align="center">
+														<img src="quot.png" title="Quotes Citation" class="img-fluid" width="275" style="display: block;width: 275px" alt="Quotes Citation">									
+													</td>
+												</tr>
+												<tr>
+													<td align="right" style="Padding:32px 0 32px 0">
+														<h2 style="text-align: center;font-family: 'Playfair Display', serif; font-weight: 700; font-size: 18px;font-style: italic;color: #000000; line-height: 24px;Padding:0;margin: 0">
+															Cessons de vouloir décrypter le comportement du chat à travers le prisme du chien								
+														</h2>
+													</td>
+												</tr>
+
+												<tr>
+													<td align="center">
+														<img src="quot_inv.png" title="Quotes Citation" class="img-fluid" width="275" style="display: block;width: 275px" alt="Quotes Citation">									
+													</td>
+												</tr>
+											</table>
+										</th>
+										<th class="d-sm-none" width="32"></th>
+										<th class="col-auto mt-64" align="center" width="245"  >
+											<table role="presentation" class="container"  align="center" width="245" border="0" cellspacing="0" cellpadding="0" style="width: 245px;">
+											<tbody>
+												<tr>
+													<td align="left">
+														<p style="font-family: 'Roboto', Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 20px;Padding:0;margin: 0">
+															Mais cela ne signifie pas qu’il ne vous aime pas. Cessons de vouloir décrypter le comportement du chat à travers le prisme du chien ou même en fonction de nos besoins à nous, humains, êtres sociaux par excellence. Un chat ne va pas forcément répondre quand on l’appelle, ne va pas chercher à tout prix à vous faire plaisir et à interagir avec vous. C’est plutôt quand bon lui semble et c’est à prendre ou à laisser.									
+														</p>	
+													</td>
+												</tr>
+											</tbody>
+											</table>
+										</th>
+									</tr>
+								</tbody>
+								</table>
+							</td>
+						</tr>												
+					</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<table role="presentation" class="container-fluid"  align="center" width="640" border="0" cellspacing="0" cellpadding="0" style="width: 640px;background-color: #FFFFFF">
+						<tbody>
+							<div class="fixiOS" style="width:320px; height:0px"></div>
+							<tr>
+								<td align="center">
+									<table role="presentation" class="container"  align="center" width="520" border="0" cellspacing="0" cellpadding="0" style="width: 520px;">
+										<tr>
+											<td align="left" style="Padding:40px 0 16px 0" >
+												<h2  style="font-family: 'Playfair Display', Times, Times New Roman, serif; font-size: 24px; font-weight:bold;margin:0;line-height: 32px;Padding:0; color:#000000;">
+													En faites-vous assez pour votre chat ? 
+												</h2>
+											</td>
+										</tr>
+										<tr>
+											<td align="left" style="Padding:0 0 64px 0">
+											<p style="font-family: 'Roboto', Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 20px;Padding:0;margin: 0">
+												Peut-être qu’aux yeux de votre chat, vous n’avez pas plus grand intérêt qu’un meuble dans le salon. Pour créer du lien et déclencher un attachement de la part de votre animal, il faut s’occuper de lui … mais à sa façon. 
+											</p>
+											</td>
+										</tr>	
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!--FIN EDITO-->
+	<!--DEBUT QUINCONCE-->
+	<table role="presentation" class="container-fluid" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#F5F5F5">
+	<tbody>
+		<tr>
+			<td align="center" >
+				<table role="presentation" class="container-fluid" align="center" width="640" border="0" cellspacing="0" cellpadding="0" style="background-color:#cff0f0;width: 640px;">
+					<div class="fixiOS" style="width:320px; height:0px"></div>	
+					<tr>
+						<th align="center" class="display-header">
+							<table role="presentation" class="container-fluid" align="center" width="320" border="0" cellpadding="0" cellspacing="0" style="width: 320px;">
+								<tr>
+									<td align="center">
+											<img src="image 3.png" alt="Mosaique Image 1" title="Mosaique Image 1" width="320" class="img-fluid" style="display:block;border:0;width: 320px" />
+									</td>
+								</tr>
+							</table>
+						</th>
+						<th align="center" class="display-footer" >
+							<table role="presentation" class="container-fluid" align="center"  width="320" border="0" cellpadding="0" cellspacing="0" style="width: 320px;">
+								<tr>
+									<td align="center" style="Padding: 64px 0">
+										<table role="presentation"  class="container" width="245" border="0" cellspacing="0" cellpadding="0" style="width: 245px;">
+											<tr>
+												<td align="left" >
+													<h3 style="font-family: 'Playfair Display', 'Times', serif; font-weight: bold; font-size: 20px; line-height: 24px;Padding:0;margin: 0;color:#000000">
+														Lui donner à manger,
+													</h3>
+													<p style="font-family: 'Roboto', Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 20px;Padding:0;margin: 0">
+														lui mettre de l’eau fraîche, changer sa litière : impliquez-vous, même dans les tâches qui ne sont pas les plus agréables. C’est l’occasion de mélanger votre signature olfactive à celle de votre chat : n’oubliez pas que le monde des félins passe par les odeurs.
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</th>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				<table role="presentation" class="container-fluid" align="center" width="640" border="0" cellspacing="0" cellpadding="0" style="background-color:#9fe1e1;width: 640px;">
+					<div class="fixiOS" style="width:320px; height:0px"></div>	
+					<tr>
+						<th align="center" class="display-footer">
+							<table role="presentation" class="container-fluid" align="center"  width="320" border="0" cellpadding="0" cellspacing="0" style="width: 320px;">
+	
+								<tr>
+									<td align="center" style="Padding: 64px 0">
+										<table role="presentation"  class="container" width="245" border="0" cellspacing="0" cellpadding="0" style="width: 245px;">
+											<tr>
+												<td align="left" >
+													<h3 style="font-family: 'Playfair Display', 'Times', serif; font-weight: bold; font-size: 20px; line-height: 24px;Padding:0;margin: 0;color:#000000">
+														Surprenez votre chiot :
+													</h3>
+													<p style="font-family: 'Roboto', Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 20px;Padding:0;margin: 0">non pas avec des gestes brusques, ça les fait plutôt fuir, mais avec des intonations de voix modulées et plus aiguës. Sans nul doute, cela éveillera sa curiosité. 
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								
+							</table>
+						</th>
+						<th align="center" class="display-header ">
+							<table role="presentation" class="container-fluid" align="center" width="320" border="0" cellpadding="0" cellspacing="0" style="width: 320px;">
+								<tr>
+									<td align="center">
+											<img src="image 4.png" alt="Mosaique Image 2" title="Mosaique Image 2" width="320" class="img-fluid" style="display:block;border:0;width: 320px" />
+									</td>
+								</tr>
+							</table>
+						</th>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+	</table>
+	<!--FIN QUINCONCE-->
+	<!--DEBUT ARTICLE-->
+	<table role="presentation" class="container-fluid" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#F5F5F5">
+		<tbody>		
+			<tr>
+				<td align="center">
+					<table role="presentation" class="container-fluid"  align="center" width="640" border="0" cellspacing="0" cellpadding="0" style="width: 640px;background-color: #FFFFFF">
+						<tbody>
+							<div class="fixiOS" style="width:320px; height:0px"></div>
+							<tr>
+								<td align="center">
+									<table role="presentation" class="container"  align="center" width="520" border="0" cellspacing="0" cellpadding="0" style="width: 520px;">
+										<tr>
+											<td align="left" style="Padding:64px 0 16px 0" >
+												<h2  style="font-family: 'Playfair Display', Times, Times New Roman, serif; font-size: 24px; font-weight:bold;margin:0;line-height: 32px;Padding:0; color:#000000;">
+													N’en feriez-vous pas trop avec votre chat ? 
+												</h2>
+											</td>
+										</tr>
+										<tr>
+											<td align="left" style="Padding:0 0 64px 0">
+											<p style="font-family: 'Roboto', Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 20px;Padding:0;margin: 0">
+												Vouloir à tout prix forcer le contact physique avec son chat est voué à l’échec. Un chat choisit et n’aime pas être contraint, porté dans les bras … Si à son arrivée à la maison, vous avez eu tendance à être trop démonstratif avec lui, il est fort probable qu’il n’ait pas fait une association positive avec vous. Et pour ces raisons, dans une famille, c’est parfois la personne qui voulait à tout prix un chat qui ressent le moins de gratitude de la part de son animal. Cela explique aussi pourquoi, quand vous organisez un dîner avec des amis à la maison, votre chat va toujours vers la personne qui n’aime pas les bêtes ou qui est allergique : il sait qu’avec lui, il pourra s’approcher, prendre le temps de sentir, sans se retrouver papouiller de tous les côtés. <br><br>Pour amorcer des contacts positifs, accroupissez-vous, tendez votre main et laissez votre chat vous approcher, sentir, éventuellement se frotter à vous, mais ne le caressez pas. 
+											</p>
+											</td>
+										</tr>	
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" >
+									<table border="0" role="presentation" align="center" cellspacing="0" cellpadding="0" style="background-color: #d7d7d7;width: 100%;" width="100%">
+										<tr>
+											<td align="center"  height="4" style="line-height:1px;font-size:1px;">&nbsp;</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!--FIN ARTICLE-->
+	<!-- DEBUT PODCAST -->
+	<table role="presentation" class="container-fluid" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#F5F5F5">
+		<tbody>	
+			<tr>
+				<td align="center">
+					<table role="presentation" class="full_bg_podcast container-fluid"  align="center" width="800" border="0" cellspacing="0" cellpadding="0" style="width: 800px;background-color: #0EB3B3">	
+						<div class="fixiOS" style="width:320px; height:0px"></div>	
+						<tr>
+							<td align="center">
+								<table role="presentation" class="container-fluid"  align="center" width="640" border="0" cellspacing="0" cellpadding="0" style="width: 640px;">
+									<tbody>
+										<div class="fixiOS" style="width:320px; height:0px"></div>
+										<tr>
+											<th align="center" class="col-auto" >
+												<a href="#" target="_blank" title="Image Podcast" style="border:none;" border="0">
+													<img src="image 6.png" alt="Image Podcast" title="Image Podcast" width="320" class="img-fluid" style="display:block;border:0;width: 320px" />
+												</a>
+											</th>
+											<th align="center" class="col-auto" style="background-color:#0EB3B3" valign="top" >
+												<table role="presentation" class="container-fluid" align="center"  width="320" border="0" cellpadding="0" cellspacing="0" style="width: 320px;">
+													<tr>
+														<td align="center" >
+															<table role="presentation"  class="container" width="260" border="0" cellspacing="0" cellpadding="0" style="width: 260px;">
+																<tr>
+																	<td align="left" style="Padding:32px 0 0 0;"  >
+																		<p style="font-family:'Roboto',sans-serif; font-weight:bold;font-size:16px;Padding:0;margin:0;text-transform: uppercase;color:#B30181">
+																			<a href="#" style="text-decoration:none; color:#B30181" target="_blank" title="Titre Podcast" data-actito-link-name="Titre Podcast">J’ai rencontré</a>
+																		</p>
+																	</td>
+																</tr>
+																<tr>
+																	<td align="left" style="Padding:16px 0">
+																		<h2 style="text-align: left;font-family: 'Playfair Display', serif; font-weight: 700; font-size: 20px;font-style: italic;color: #FFFFFF; line-height: 24px;Padding:0;margin: 0">
+																			Prénom NomDeFamille
+
+																											
+																		</h2>
+																	</td>
+																</tr>
+																<tr>
+																	<td align="left" style="Padding:0 0 40px 0">
+																		<p style="text-align: left;font-family: 'Playfair Display', serif; font-weight: 700; font-size: 18px;font-style: normal;color: #FFFFFF; line-height: 24px;Padding:0;margin: 0">									
+																			“J’élève des chiens pour personnes en situation de handicap”									
+																		</p>
+																	</td>
+																</tr>
+																<tr>
+																	<td align="center" style="Padding: 0 0 32px 0;">
+																		<table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0">
+																		<tbody>
+																			<tr>
+																				<td align="center" style="Padding: 12px 24px; border-radius: 50px;background-color:#FFFFFF">
+																					<table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0">
+																						<tr>
+																							<td align="right">
+																								<img src="mic.png" alt="Icone Micro" title="Icone Micro" width="24" style="border:0;width: 24px;Padding:0 4px 0 0"/>
+																							</td>
+																							<td align="left">
+																								<p style="font-family:'Montserrat', Arial, sans-serif; font-weight: bold; font-size: 12px;line-height: 24px; color: #B30181;Padding:0;margin:0;text-transform: uppercase;vertical-align: middle;">
+																									<a href="#" title="BOUTON - Podcast " style="text-decoration: none; color:#B30181;">
+																										écouter le podcast
+																									</a>
+																								</p>
+																							</td>
+																						</tr>
+																					</table>
+
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</th>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- FIN PODCAST -->
+	<!--DEBUT BILLET-->
+	<table role="presentation" class="container-fluid" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#F5F5F5">
+		<tbody>	
+		
+			<tr>
+				<td align="center">
+					<table role="presentation" class="container-fluid"  align="center" width="640" border="0" cellspacing="0" cellpadding="0" style="width: 640px;background-color: #ecbfdf">
+						<tbody>
+							<div class="fixiOS" style="width:320px; height:0px"></div>
+							<tr>
+								<td align="center" >
+									<table border="0" role="presentation" align="center" cellspacing="0" cellpadding="0" style="background-color: #d7d7d7;width: 100%;" width="100%">
+										<tr>
+											<td align="center"  height="4" style="line-height:1px;font-size:1px;">&nbsp;</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td align="center">
+									<table role="presentation" class="container"  align="center" width="520" border="0" cellspacing="0" cellpadding="0" style="width: 520px;">
+										<tr>
+											<td align="left" style="Padding:64px 0 0 0" >
+												<h1  style="font-family: 'Playfair Display', Times, Times New Roman, serif; font-size: 36px; font-weight:bold;margin:0;line-height: 48px;Padding:0; color:#000000;">
+													Billet d’humeur
+												</h1>
+											</td>
+										</tr>
+										<tr>
+											<td align="left" style="Padding:16px 0">
+											<p style="font-family: 'Roboto-Bold', 'Roboto', Arial, sans-serif; font-weight: bold; font-size: 14px;color:#000000; line-height: 20px;Padding:0;margin: 0">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia enim eu sollicitudin venenatis. Praesent auctor vitae tortor in finibus. Duis egestas lectus ut enim tempor suscipit. Duis euismod sapien sit amet lobortis consequat.
+											</p>
+											</td>
+										</tr>
+										<tr>
+											<td align="left" style="Padding:0 0 24px 0">
+											<p style="font-family: 'Roboto', Arial, sans-serif; font-weight: normal; font-size: 14px;color:#000000; line-height: 20px;Padding:0;margin: 0">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia enim eu sollicitudin venenatis. Praesent auctor vitae tortor in finibus. Duis egestas lectus ut enim tempor suscipit. Duis euismod sapien sit amet lobortis consequat.
+											</p>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" >
+					<table role="presentation" class="container-fluid"  align="center" width="640" border="0" cellspacing="0" cellpadding="0" style="width: 640px;background-color: #ecbfdf">
+						<div class="fixiOS" style="width:320px; height:0px"></div>
+						<tr>
+							<td align="center">
+								<table role="presentation" class="container"  align="center" width="520" border="0" cellspacing="0" cellpadding="0" style="width: 520px;">
+									<tr>
+										<th align="center" class="display-header ">
+											<a href="#" target="_blank" title="Image Billet" style="border:none;" border="0">
+												<img src="chat.png" alt="Image Billet" title="Image Billet" width="180" class="img-fluid mb-32" style="display:block;border:0;width: 180px" />
+											</a>
+										</th>
+										<th class="d-sm-none" width="20"></th>
+										<th align="center" class="display-footer" >
+											<table role="presentation" class="container-fluid" align="center"  width="320" border="0" cellpadding="0" cellspacing="0" style="width: 320px;">
+												<tr>
+													<td align="left" >
+													<p style="font-family: 'Roboto', Arial, sans-serif; font-weight: normal; font-size: 14px;color:#000000; line-height: 20px;Padding:0;margin: 0">
+														Morbi egestas augue ligula, ut ultricies felis interdum ut. Vestibulum tincidunt accumsan nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin aliquet blandit pharetra. Ut luctus sit amet purus eu pretium. Vivamus lorem mauris, convallis vel sapien vel, semper aliquet orci. Morbi id sapien in nulla condimentum pulvinar ac quis sem. Cras id lectus quam. Sed molestie eu lorem vitae scelerisque. Aenean tempor, odio nec blandit facilisis, nulla augue dictum metus, eu tempor libero arcu ultricies tortor.
+													</p>
+													</td>
+												</tr>
+											</table>
+										</th>
+									</tr>
+									<tr>
+										<td align="left" style="Padding:16px 0 48px 0" colspan="3">
+										<p style="font-family:  'Roboto', Arial, sans-serif; font-weight: normal; font-size: 14px;color:#000000; line-height: 20px;Padding:0;margin: 0">
+											Aenean eget venenatis est. Sed semper eros lorem, sed mattis ante elementum ut. Aenean molestie placerat ullamcorper. Integer mattis velit ut egestas condimentum. Morbi consequat risus ac luctus suscipit. Curabitur lorem dui, hendrerit non nulla id, bibendum scelerisque ante. Integer a imperdiet lorem. Morbi tellus arcu, vestibulum at vulputate sit amet, hendrerit eu massa. Vivamus sollicitudin elementum tellus ac sodales.
+										</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!--FIN BILLET-->
+	<!--DEBUT FOOTER -->
+	<table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color:#F5F5F5;width: 100%;">
+	<tbody>
+		<tr>
+			<td align="center">
+				<table role="presentation" align="center" border="0"  class="container-fluid" width="640" cellspacing="0" cellpadding="0" style="width: 640px;">
+					<tbody>
+						<div class="fixiOS" style="width:320px; height:0px"></div>
+						<tr>
+							<td align="center">
+								<table role="presentation" align="center" width="540" border="0" cellspacing="0" cellpadding="0" class="container" style="width: 540px">
+									<tr>
+										<td align="center" style="Padding:32px 0 0 0" >
+											<h2  style="font-family: 'Playfair Display', Times, Times New Roman, serif; font-size: 24px; font-weight:bold;margin:0;line-height: 32px;Padding:0; color:#000000;">
+												Retrouvez-nous mardi pour l'actu santé 
+											</h2>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" style="Padding:32px 0 24px 0;"  >
+											<p style="font-family:'Roboto',sans-serif; font-weight:bold;font-size:12px;Padding:0;margin:0">
+												<a href="${unsubscribe}" style="text-decoration:underline; color:#000000" target="_blank" title="unsubscribe" data-actito-link-name="unsubscribe">Se désabonner</a>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td style="color: #666666; font-family: 'Roboto', sans-serif; font-size:12px;Padding:0 0 32px 0;" align="left" >
+											La société Le Club Santé Débat, responsable de traitement, met en œuvre un traitement de données à caractère personnel ayant pour finalités la gestion de votre abonnement à nos newsletters. Vous pouvez exprimer votre accord ou refus lors de votre inscription ou à tout autre moment. Les données personnelles collectées sont destinées à Le Club Santé Débat, Webedia et à ses prestataires et partenaires commerciaux. Conformément au Règlement européen sur la protection des données, vous bénéficiez d'un droit d'accès, de rectification, d'opposition, de suppression, de limitation, de portabilité de vos données et à ne pas faire l'objet d'une décision individuelle automatisée, y compris le profilage. Vous seul(e) pouvez exercer ces droits sur vos propres données en vous adressant par email à drgood-dpo@webedia-group.com ou par courrier postal à Le Club Santé Débat - DrGood, Service CRM, 2 rue Paul Vaillant Couturier, 92280 Levallois-Perret en précisant dans l'objet du courrier « Droit des personnes » et en joignant la copie de votre justificatif d'identité. Vous pouvez également nous transmettre vos directives relatives à la conservation, à l'effacement et à la communication de vos données personnelles après votre décès. En cas de réponse insatisfaisante, vous avez la possibilité de saisir la CNIL.
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+	</table>
+<!--FIN FOOTER -->
+</div>
+</body>
+</html>
