@@ -1,0 +1,3132 @@
+<!DOCTYPE html>
+<html xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <title>Sampleo - Hebdomadaire</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+      /*DEFAULT CSS*/
+      body {
+        text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+        padding: 0;
+        margin: 0;
+        background-color: #fafafa !important;
+        font-weight: normal;
+      }
+      table {
+        border-collapse: collapse;
+        mso-table-lspace: 0;
+        mso-table-rspace: 0;
+      }
+      .d-lg-none {
+        display: none !important;
+      }
+      .hover:hover {
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+        transform: scale(1.01);
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+      }
+
+      .hover-dark {
+        -webkit-filter: brightness(70%);
+      }
+
+      .hover-dark:hover {
+        -webkit-filter: brightness(100%);
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        transform: scale(1.01);
+      }
+
+      .s-btn {
+        transition: all 100ms ease-in;
+      }
+      .s-btn__outlined:hover {
+        background: rgba(28, 28, 56, 1) !important;
+        color: #ffffff !important;
+      }
+
+      /*Reset Laposte TH */
+      th a,
+      th a:link,
+      th a:visited {
+        background: none !important;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        background: none !important;
+      }
+
+      /*FONTS*/
+      @media screen {
+        .foo {
+          /*ORANGE MAIL*/
+        }
+        @font-face {
+          font-family: "Fira Sans";
+          font-style: normal;
+          font-weight: 700;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/firasans/v11/va9B4kDNxMZdWfMOD5VnLK3eRhf6.woff2)
+            format("woff2");
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+            U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+            U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        @font-face {
+          font-family: "Fira Sans";
+          font-style: italic;
+          font-weight: 400;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/firasans/v11/va9C4kDNxMZdWfMOD5VvkrjHYTLHdQ.woff2)
+            format("woff2");
+          unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+            U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        @font-face {
+          font-family: "Fira Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/s/firasans/v11/va9E4kDNxMZdWfMOD5Vvl4jL.woff2)
+            format("woff2");
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+            U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+            U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+      }
+
+      /*RESPONSIVE*/
+      @media only screen and (max-width: 320px) {
+        .foo {
+          /*ORANGE MAIL*/
+        }
+        .fixiOS {
+          width: 200px !important;
+        }
+      }
+
+      @media only screen and (min-width: 321px) and (max-width: 415px) {
+        .foo {
+          /*ORANGE MAIL*/
+        }
+        .fixiOS {
+          width: 200px !important;
+        }
+      }
+
+      @media screen and (max-width: 640px) {
+        .foo {
+          /*ORANGE MAIL*/
+        }
+        .container-fluid {
+          width: 100% !important;
+        }
+        .container {
+          width: 90% !important;
+        }
+        .col-0 {
+          width: 0px;
+        }
+        .col-sm-1 {
+          width: 40px;
+        }
+        .col-sm-2 {
+          width: 80px;
+        }
+        .col-sm-3 {
+          width: 120px;
+        }
+        .col-sm-4 {
+          width: 160px;
+        }
+        .col-sm-5 {
+          width: 200px;
+        }
+        .col-sm-6 {
+          width: 240px;
+        }
+        .col-sm-7 {
+          width: 280px;
+        }
+        .col-sm-8 {
+          width: 300px;
+        }
+        .col-auto {
+          width: 100%;
+          display: block;
+        }
+
+        .display-header {
+          width: 100% !important;
+          display: table-header-group !important;
+        }
+        .display-footer {
+          width: 100% !important;
+          display: table-footer-group !important;
+        }
+        .d-sm-none {
+          display: none !important;
+        }
+        .d-block {
+          display: block !important;
+        }
+
+        .img-fluid {
+          width: 100% !important;
+          height: auto !important;
+        }
+        .img-fluid-80 {
+          width: 80% !important;
+          height: auto !important;
+        }
+        .hauto {
+          height: auto !important;
+        }
+
+        .f12 {
+          font-size: 12px !important;
+        }
+        .f14 {
+          font-size: 14px !important;
+          line-height: 18px !important;
+        }
+        .f16 {
+          font-size: 16px !important;
+          line-height: 20px !important;
+        }
+        .f18 {
+          font-size: 18px !important;
+          line-height: 22px !important;
+        }
+        .f22 {
+          font-size: 22px !important;
+          line-height: 24px !important;
+        }
+        .f32 {
+          font-size: 32px !important;
+          line-height: 1.3em !important;
+        }
+        .text-center {
+          text-align: center !important;
+        }
+        .ml-8 {
+          margin-left: 8px !important;
+        }
+        .ml-16 {
+          margin-left: 16px !important;
+        }
+        .mr-8 {
+          margin-right: 8px !important;
+        }
+        .mr-16 {
+          margin-right: 16px !important;
+        }
+        .mt-8 {
+          margin-top: 8px !important;
+        }
+        .mt-16 {
+          margin-top: 16px !important;
+        }
+        .mt-32 {
+          margin-top: 32px !important;
+        }
+        .mt-64 {
+          margin-top: 32px !important;
+        }
+        .mb-0 {
+          margin-bottom: 0px !important;
+        }
+        .mb-8 {
+          margin-bottom: 8px !important;
+        }
+        .mb-16 {
+          margin-bottom: 16px !important;
+        }
+        .mb-24 {
+          margin-bottom: 24px !important;
+        }
+        .mb-32 {
+          margin-bottom: 32px !important;
+        }
+        .mb-48 {
+          margin-bottom: 64px !important;
+        }
+      }
+    </style>
+    <!--[if mso]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:PixelsPerInch> 96 </o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+  </head>
+  <body data-actito-log-opening="true">
+    <div lang="fr">
+      <!--PRE-HEADER-->
+      <table
+        role="presentation"
+        align="center"
+        border="0"
+        cellspacing="0"
+        cellpadding="0"
+        style="background-color: #f4f4f4; width: 100%"
+      >
+        <tbody>
+          <tr>
+            <td align="center">
+              <table
+                role="presentation"
+                align="center"
+                width="640"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                class="container-fluid"
+                style="width: 640px"
+              >
+                <tbody>
+                  <tr>
+                    <td align="center" valign="top">
+                      <div
+                        class="fixiOS"
+                        style="width: 200px; height: 1px"
+                      ></div>
+                      <div
+                        style="
+                          display: none;
+                          font-size: 1px;
+                          color: #ffffff;
+                          line-height: 1px;
+                          font-family: 'Roboto', Arial, sans-serif;
+                          max-height: 0px;
+                          max-width: 0px;
+                          opacity: 0;
+                          overflow: hidden;
+                          mso-hide: all;
+                        "
+                      ></div>
+                      <div
+                        style="display: none; max-height: 0px; overflow: hidden"
+                      >
+                        &nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌
+                        ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+                        ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+                        ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      height="10"
+                      align="center"
+                      style="
+                        text-align: center;
+                        font-family: Arial, sans-serif;
+                        font-weight: normal;
+                        font-size: 11px;
+                        padding: 8px 0 10px 0;
+                      "
+                      valign="top"
+                    >
+                      <a
+                        href="https://www.sampleo.com/fr/"
+                        border="0"
+                        style="
+                          font-family: Arial, sans-serif;
+                          text-decoration: underline;
+                          color: #666666;
+                        "
+                        target="_blank"
+                        title="LienMirroir"
+                        data-actito-link-name="LienMirroir"
+                        >Consulter la version en ligne</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!--FIN PRE-HEADER-->
+
+      <!--HEADER-->
+      <table
+        role="presentation"
+        align="center"
+        border="0"
+        cellspacing="0"
+        cellpadding="0"
+        style="background-color: #f4f4f4; width: 100%"
+      >
+        <tbody>
+          <tr>
+            <td align="center">
+              <table
+                role="presentation"
+                class="container"
+                align="center"
+                width="640"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                style="
+                  width: 640px;
+                  background-color: #1c1c38;
+                  border-radius: 5px 5px 0 0;
+                "
+              >
+                <tr>
+                  <td align="center" style="padding: 32px 0 32px 0">
+                    <div class="fixiOS" style="width: 300px; height: 1px"></div>
+
+                    <table
+                      role="presentation"
+                      class="container"
+                      align="center"
+                      width="576"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      style="width: 576px"
+                    >
+                      <tr>
+                        <td align="center" width="150">
+                          <a
+                            href="https://www.sampleo.com/fr/"
+                            target="_blank"
+                            data-actito-link-name="Logo Sampleo"
+                            title="Go to the Website"
+                          >
+                            <img
+                              src="./assets/logo-blanc-i401.png"
+                              width="150"
+                              style="width: 150px; display: block"
+                              alt="Logo Sampleo"
+                              border="0"
+                            />
+                          </a>
+                        </td>
+
+                        <td width="12" class="d-sm-none">&nbsp;‌</td>
+                        <td align="right" class="d-sm-none">
+                          <p
+                            style="
+                              font-family: 'Fira Sans', Arial, sans-serif;
+                              font-style: italic;
+                              font-weight: normal;
+                              font-size: 16px;
+                              line-height: 20px;
+                              padding: 0;
+                              margin: 0;
+                              color: #ffffff;
+                            "
+                          >
+                            ${firstname}, devenez ambassadeur !
+                          </p>
+                        </td>
+                      </tr>
+                      <!--[if !mso]><\!-->
+                      <tr>
+                        <td align="center" class="d-lg-none d-block mt-16">
+                          <p
+                            style="
+                              font-family: 'Fira Sans', Arial, sans-serif;
+                              font-style: italic;
+                              font-weight: normal;
+                              font-size: 16px;
+                              line-height: 20px;
+                              padding: 0;
+                              margin: 0;
+                              color: #ffffff;
+                            "
+                          >
+                            ${firstname}, devenez ambassadeur !
+                          </p>
+                        </td>
+                      </tr>
+                      <!-- <![endif]-->
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding: 0 0 48px 0">
+              <table
+                role="presentation"
+                class="container"
+                align="center"
+                width="640"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                style="
+                  width: 640px;
+                  background-color: #ffffff;
+                  border-radius: 0 0 5px 5px;
+                  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+                "
+              >
+                <tr>
+                  <td align="center" style="padding: 32px 0 32px 0">
+                    <table
+                      role="presentation"
+                      class="container"
+                      align="center"
+                      width="480"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      style="width: 480px"
+                    >
+                      <tr>
+                        <td align="center">
+                          <h1
+                            style="
+                              font-family: 'Fira Sans', Arial, sans-serif;
+                              font-weight: bold;
+                              font-size: 28px;
+                              line-height: 32px;
+                              padding: 0;
+                              margin: 0;
+                              color: #1c1c38;
+                            "
+                          >
+                            Cette semaine chez Sampleo
+                          </h1>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="padding: 24px 0 24px 0">
+                          <img
+                            src="./assets/image-1-1-i435.png"
+                            width="150"
+                            style="width: 150px; display: block"
+                            alt="Illustration"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <p
+                            style="
+                              font-family: 'Fira Sans', Arial, sans-serif;
+                              font-weight: normal;
+                              font-size: 16px;
+                              line-height: 20px;
+                              padding: 0;
+                              margin: 0;
+                              color: #000000;
+                            "
+                          >
+                            Devenez ambassadeur de marques en candidatant aux
+                            campagnes qui vous plaisent le plus !
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="padding: 24px 0 0 0">
+                          <table
+                            role="presentation"
+                            align="center"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                          >
+                            <tbody>
+                              <tr>
+                                <td
+                                  class="s-btn s-btn__outlined"
+                                  style="
+                                    border-radius: 4px;
+                                    background: #ffffff;
+                                    text-align: center;
+                                  "
+                                >
+                                  <a
+                                    class="s-btn s-btn__outlined"
+                                    href="https://www.sampleo.com/fr/"
+                                    title="Go to the website"
+                                    data-actito-link-name="CTA Discover the campaigns"
+                                    style="
+                                      background: #ffffff;
+                                      border: 0.5px solid #1c1c38;
+                                      font-family: arial, sans-serif;
+                                      font-size: 16px;
+                                      line-height: 20px;
+                                      font-weight: bold;
+                                      color: #1c1c38;
+                                      text-align: center;
+                                      text-decoration: none;
+                                      padding: 8px 18px;
+                                      display: block;
+                                      border-radius: 4px;
+                                      white-space: nowrap;
+                                    "
+                                  >
+                                    Découvrir les campagnes
+                                  </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!--FIN HEADER-->
+
+      <!--DEBUT CAMPAGNES OUVERTES-->
+      <table
+        role="presentation"
+        align="center"
+        border="0"
+        cellspacing="0"
+        cellpadding="0"
+        style="background-color: #f4f4f4; width: 100%"
+      >
+        <tbody>
+          <tr>
+            <td align="center">
+              <table
+                role="presentation"
+                class="container"
+                align="center"
+                width="640"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                style="width: 640px"
+              >
+                <tr>
+                  <td align="center" style="padding: 0 0 32px 0">
+                    <div class="fixiOS" style="width: 300px; height: 1px"></div>
+                    <table
+                      role="presentation"
+                      class="container"
+                      align="center"
+                      width="576"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      style="width: 576px"
+                    >
+                      <tr>
+                        <td align="center">
+                          <h2
+                            style="
+                              font-family: 'Fira Sans', Arial, sans-serif;
+                              font-style: italic;
+                              font-weight: normal;
+                              font-size: 24px;
+                              line-height: 28px;
+                              padding: 0;
+                              margin: 0;
+                              color: #1c1c38;
+                            "
+                          >
+                            Ces campagnes sont ouvertes
+                          </h2>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="padding: 16px 0 0 0">
+                          <table
+                            border="0"
+                            role="presentation"
+                            align="center"
+                            cellspacing="0"
+                            cellpadding="0"
+                            style="background-color: #1c1c38; width: 100px"
+                            width="100"
+                          >
+                            <tbody>
+                              <tr>
+                                <td
+                                  align="center"
+                                  height="1"
+                                  style="line-height: 1px; font-size: 1px"
+                                >
+                                  &nbsp;
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding: 0 0 32px 0">
+              <table
+                role="presentation"
+                class="container"
+                align="center"
+                width="640"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                style="
+                  width: 640px;
+                  background-color: #ffffff;
+                  border-radius: 5px;
+                  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+                "
+              >
+                <tr>
+                  <td align="center">
+                    <a
+                      href="https://www.sampleo.com/fr/participation/1141"
+                      target="_blank"
+                      title="Go to the website"
+                      data-actito-link-name="Image Main campaign"
+                    >
+                      <img
+                        src="./assets/./60dc8fff68ada.jpg"
+                        alt="Image Campaign"
+                        width="640"
+                        style="
+                          width: 640px;
+                          display: block;
+                          border: none;
+                          border-radius: 5px 5px 0 0;
+                        "
+                        class="img-fluid d-sm-none hover"
+                      />
+
+                      <!--[if !mso]><\!-->
+                      <img
+                        src="./assets/./60dc8fff61f8e.jpg"
+                        alt="Image Campaign"
+                        width="320"
+                        style="
+                          width: 320px;
+                          display: block;
+                          border: none;
+                          border-radius: 5px 5px 0 0;
+                        "
+                        class="img-fluid d-lg-none d-block"
+                      />
+                      <!-- <![endif]-->
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center" style="padding: 24px 0 24px 0">
+                    <table
+                      role="presentation"
+                      class="container"
+                      align="center"
+                      width="576"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      style="width: 576px"
+                    >
+                      <tr>
+                        <th class="col-auto mb-48" width="340">
+                          <h3
+                            style="
+                              text-align: left;
+                              font-family: 'Fira Sans', Arial, sans-serif;
+                              font-weight: bold;
+                              font-size: 20px;
+                              line-height: 24px;
+                              padding: 0;
+                              margin: 0;
+                              color: #1c1c38;
+                            "
+                          >
+                            FELIWAY
+                          </h3>
+                          <p
+                            style="
+                              text-align: left;
+                              font-family: 'Fira Sans', Arial, sans-serif;
+                              font-weight: normal;
+                              font-size: 16px;
+                              line-height: 20px;
+                              padding: 0;
+                              margin: 8px 0 16px 0;
+                              color: #aaaaaa;
+                            "
+                          >
+                            FELIWAY Optimum
+                          </p>
+                          <table
+                            role="presentation"
+                            align="left"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            style="border-radius: 6px; background: #ff7900"
+                          >
+                            <tbody>
+                              <tr>
+                                <td align="center" style="padding: 4px 8px">
+                                  <img
+                                    src="./assets/clock-i454.png"
+                                    width="16"
+                                    style="width: 16px; display: block"
+                                  />
+                                </td>
+                                <td
+                                  valign="middle"
+                                  style="
+                                    padding: 0 8px 0 0;
+                                    text-align: center;
+                                    font-family: arial, sans-serif;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    font-weight: bold;
+                                    color: #ffffff;
+                                    text-align: center;
+                                  "
+                                >
+                                  Fin dans 3 jours
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </th>
+                        <th class="d-sm-none" width="125">&nbsp;</th>
+                        <th class="col-auto" valign="top">
+                          <table
+                            role="presentation"
+                            align="left"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                          >
+                            <tbody>
+                              <tr>
+                                <td
+                                  class="s-btn s-btn__outlined"
+                                  style="
+                                    border-radius: 4px;
+                                    background: #ffffff;
+                                    text-align: center;
+                                  "
+                                >
+                                  <a
+                                    class="s-btn s-btn__outlined"
+                                    href="https://www.sampleo.com/fr/participation/1141"
+                                    title="Go to the website"
+                                    data-actito-link-name="CTA Main campaign"
+                                    style="
+                                      background: #ffffff;
+                                      border: 0.5px solid #1c1c38;
+                                      font-family: arial, sans-serif;
+                                      font-size: 16px;
+                                      line-height: 20px;
+                                      font-weight: bold;
+                                      color: #1c1c38;
+                                      text-align: center;
+                                      text-decoration: none;
+                                      padding: 8px 18px;
+                                      display: block;
+                                      border-radius: 4px;
+                                      white-space: nowrap;
+                                    "
+                                  >
+                                    Participer
+                                  </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </th>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding: 0 0 48px 0">
+              <table
+                role="presentation"
+                class="container"
+                align="center"
+                width="640"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                style="width: 640px"
+              >
+                <tr>
+                  <th
+                    class="col-auto mb-32"
+                    valign="top"
+                    style="
+                      background-color: #ffffff;
+                      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+                      border-radius: 5px;
+                    "
+                  >
+                    <table
+                      class="container-fluid"
+                      role="presentation"
+                      align="center"
+                      width="300"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      style="width: 300px"
+                    >
+                      <tbody>
+                        <tr>
+                          <td align="center">
+                            <a
+                              href="https://www.sampleo.com/fr/participation/1149"
+                              target="_blank"
+                              title="Go to the website"
+                              data-actito-link-name="Image campain 1"
+                            >
+                              <img
+                                src="./assets/./60fa8738ab4ee.jpg"
+                                alt="Image Campaign"
+                                width="300"
+                                class="img-fluid hover"
+                                style="
+                                  border-radius: 5px 5px 0 0;
+                                  display: block;
+                                  border: 0;
+                                  width: 100%;
+                                "
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" style="padding: 24px 0 24px 0">
+                            <table
+                              class="container"
+                              role="presentation"
+                              align="center"
+                              width="256"
+                              border="0"
+                              cellspacing="0"
+                              cellpadding="0"
+                              style="width: 256px"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td align="left">
+                                    <h3
+                                      style="
+                                        text-align: left;
+                                        font-family: 'Fira Sans', Arial,
+                                          sans-serif;
+                                        font-weight: bold;
+                                        font-size: 20px;
+                                        line-height: 24px;
+                                        padding: 0;
+                                        margin: 0;
+                                        color: #1c1c38;
+                                      "
+                                    >
+                                      A-Derma
+                                    </h3>
+                                    <p
+                                      style="
+                                        text-align: left;
+                                        font-family: 'Fira Sans', Arial,
+                                          sans-serif;
+                                        font-weight: normal;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        padding: 0;
+                                        margin: 8px 0 16px 0;
+                                        color: #aaaaaa;
+                                      "
+                                    >
+                                      Soins visages dermatologiques
+                                    </p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left">
+                                    <table
+                                      role="presentation"
+                                      align="left"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      border="0"
+                                      style="
+                                        border-radius: 6px;
+                                        background: #ff7900;
+                                      "
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td
+                                            align="center"
+                                            style="padding: 4px 8px"
+                                          >
+                                            <img
+                                              src="./assets/clock-i454.png"
+                                              width="16"
+                                              style="
+                                                width: 16px;
+                                                display: block;
+                                              "
+                                            />
+                                          </td>
+                                          <td
+                                            valign="middle"
+                                            style="
+                                              padding: 0 8px 0 0;
+                                              text-align: center;
+                                              font-family: arial, sans-serif;
+                                              font-size: 12px;
+                                              line-height: 16px;
+                                              font-weight: bold;
+                                              color: #ffffff;
+                                              text-align: center;
+                                            "
+                                          >
+                                            Fin dans 3 jours
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" style="padding: 24px 0 0 0">
+                                    <table
+                                      role="presentation"
+                                      align="left"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      border="0"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td
+                                            class="s-btn s-btn__outlined"
+                                            style="
+                                              border-radius: 4px;
+                                              background: #ffffff;
+                                              text-align: center;
+                                            "
+                                          >
+                                            <a
+                                              class="s-btn s-btn__outlined"
+                                              href="https://www.sampleo.com/fr/participation/1149"
+                                              title="Go to the website"
+                                              data-actito-link-name="CTA campaign 1"
+                                              style="
+                                                background: #ffffff;
+                                                border: 0.5px solid #1c1c38;
+                                                font-family: arial, sans-serif;
+                                                font-size: 16px;
+                                                line-height: 20px;
+                                                font-weight: bold;
+                                                color: #1c1c38;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                padding: 8px 18px;
+                                                display: block;
+                                                border-radius: 4px;
+                                                white-space: nowrap;
+                                              "
+                                            >
+                                              Participer
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </th>
+                  <th width="40" class="d-sm-none">&nbsp;‌</th>
+
+                  <th
+                    class="col-auto mb-32"
+                    valign="top"
+                    style="
+                      background-color: #ffffff;
+                      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+                      border-radius: 5px;
+                    "
+                  >
+                    <table
+                      class="container-fluid"
+                      role="presentation"
+                      align="center"
+                      width="300"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      style="width: 300px"
+                    >
+                      <tbody>
+                        <tr>
+                          <td align="center">
+                            <a
+                              href="https://www.sampleo.com/fr/participation/1152"
+                              target="_blank"
+                              title="Go to the website"
+                              data-actito-link-name="Image campain 2"
+                            >
+                              <img
+                                src="./assets/./60f02fb527d70.jpg"
+                                alt="Image Campaign"
+                                width="300"
+                                class="img-fluid hover"
+                                style="
+                                  border-radius: 5px 5px 0 0;
+                                  display: block;
+                                  border: 0;
+                                  width: 100%;
+                                "
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" style="padding: 24px 0 24px 0">
+                            <table
+                              class="container"
+                              role="presentation"
+                              align="center"
+                              width="256"
+                              border="0"
+                              cellspacing="0"
+                              cellpadding="0"
+                              style="width: 256px"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td align="left">
+                                    <h3
+                                      style="
+                                        text-align: left;
+                                        font-family: 'Fira Sans', Arial,
+                                          sans-serif;
+                                        font-weight: bold;
+                                        font-size: 20px;
+                                        line-height: 24px;
+                                        padding: 0;
+                                        margin: 0;
+                                        color: #1c1c38;
+                                      "
+                                    >
+                                      DUCRAY
+                                    </h3>
+                                    <p
+                                      style="
+                                        text-align: left;
+                                        font-family: 'Fira Sans', Arial,
+                                          sans-serif;
+                                        font-weight: normal;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        padding: 0;
+                                        margin: 8px 0 16px 0;
+                                        color: #aaaaaa;
+                                      "
+                                    >
+                                      KERACNYL Gel Moussant
+                                    </p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left">
+                                    <table
+                                      role="presentation"
+                                      align="left"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      border="0"
+                                      style="
+                                        border-radius: 6px;
+                                        background: #ff7900;
+                                      "
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td
+                                            align="center"
+                                            style="padding: 4px 8px"
+                                          >
+                                            <img
+                                              src="./assets/clock-i454.png"
+                                              width="16"
+                                              style="
+                                                width: 16px;
+                                                display: block;
+                                              "
+                                            />
+                                          </td>
+                                          <td
+                                            valign="middle"
+                                            style="
+                                              padding: 0 8px 0 0;
+                                              text-align: center;
+                                              font-family: arial, sans-serif;
+                                              font-size: 12px;
+                                              line-height: 16px;
+                                              font-weight: bold;
+                                              color: #ffffff;
+                                              text-align: center;
+                                            "
+                                          >
+                                            Fin dans 3 jours
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" style="padding: 24px 0 0 0">
+                                    <table
+                                      role="presentation"
+                                      align="left"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      border="0"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td
+                                            class="s-btn s-btn__outlined"
+                                            style="
+                                              border-radius: 4px;
+                                              background: #ffffff;
+                                              text-align: center;
+                                            "
+                                          >
+                                            <a
+                                              class="s-btn s-btn__outlined"
+                                              href="https://www.sampleo.com/fr/participation/1152"
+                                              title="Go to the website"
+                                              data-actito-link-name="CTA campaign 2"
+                                              style="
+                                                background: #ffffff;
+                                                border: 0.5px solid #1c1c38;
+                                                font-family: arial, sans-serif;
+                                                font-size: 16px;
+                                                line-height: 20px;
+                                                font-weight: bold;
+                                                color: #1c1c38;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                padding: 8px 18px;
+                                                display: block;
+                                                border-radius: 4px;
+                                                white-space: nowrap;
+                                              "
+                                            >
+                                              Participer
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </th>
+                </tr>
+                <tr class="d-sm-none">
+                  <td align="center" style="padding: 16px 0" colspan="3"></td>
+                </tr>
+
+                <tr>
+                  <th
+                    class="col-auto mb-32"
+                    valign="top"
+                    style="
+                      background-color: #ffffff;
+                      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+                      border-radius: 5px;
+                    "
+                  >
+                    <table
+                      class="container-fluid"
+                      role="presentation"
+                      align="center"
+                      width="300"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      style="width: 300px"
+                    >
+                      <tbody>
+                        <tr>
+                          <td align="center">
+                            <a
+                              href="https://www.sampleo.com/fr/participation/1162"
+                              target="_blank"
+                              title="Go to the website"
+                              data-actito-link-name="Image campain 3"
+                            >
+                              <img
+                                src="./assets/./6101715c0d548.jpg"
+                                alt="Image Campaign"
+                                width="300"
+                                class="img-fluid hover"
+                                style="
+                                  border-radius: 5px 5px 0 0;
+                                  display: block;
+                                  border: 0;
+                                  width: 100%;
+                                "
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" style="padding: 24px 0 24px 0">
+                            <table
+                              class="container"
+                              role="presentation"
+                              align="center"
+                              width="256"
+                              border="0"
+                              cellspacing="0"
+                              cellpadding="0"
+                              style="width: 256px"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td align="left">
+                                    <h3
+                                      style="
+                                        text-align: left;
+                                        font-family: 'Fira Sans', Arial,
+                                          sans-serif;
+                                        font-weight: bold;
+                                        font-size: 20px;
+                                        line-height: 24px;
+                                        padding: 0;
+                                        margin: 0;
+                                        color: #1c1c38;
+                                      "
+                                    >
+                                      N.A.E.
+                                    </h3>
+                                    <p
+                                      style="
+                                        text-align: left;
+                                        font-family: 'Fira Sans', Arial,
+                                          sans-serif;
+                                        font-weight: normal;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        padding: 0;
+                                        margin: 8px 0 16px 0;
+                                        color: #aaaaaa;
+                                      "
+                                    >
+                                      Shampooings solides certifiés bio N.A.E.
+                                    </p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left">
+                                    <table
+                                      role="presentation"
+                                      align="left"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      border="0"
+                                      style="
+                                        border-radius: 6px;
+                                        background: #ff7900;
+                                      "
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td
+                                            align="center"
+                                            style="padding: 4px 8px"
+                                          >
+                                            <img
+                                              src="./assets/clock-i454.png"
+                                              width="16"
+                                              style="
+                                                width: 16px;
+                                                display: block;
+                                              "
+                                            />
+                                          </td>
+                                          <td
+                                            valign="middle"
+                                            style="
+                                              padding: 0 8px 0 0;
+                                              text-align: center;
+                                              font-family: arial, sans-serif;
+                                              font-size: 12px;
+                                              line-height: 16px;
+                                              font-weight: bold;
+                                              color: #ffffff;
+                                              text-align: center;
+                                            "
+                                          >
+                                            Fin dans 10 jours
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" style="padding: 24px 0 0 0">
+                                    <table
+                                      role="presentation"
+                                      align="left"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      border="0"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td
+                                            class="s-btn s-btn__outlined"
+                                            style="
+                                              border-radius: 4px;
+                                              background: #ffffff;
+                                              text-align: center;
+                                            "
+                                          >
+                                            <a
+                                              class="s-btn s-btn__outlined"
+                                              href="https://www.sampleo.com/fr/participation/1162"
+                                              title="Go to the website"
+                                              data-actito-link-name="CTA campaign 3"
+                                              style="
+                                                background: #ffffff;
+                                                border: 0.5px solid #1c1c38;
+                                                font-family: arial, sans-serif;
+                                                font-size: 16px;
+                                                line-height: 20px;
+                                                font-weight: bold;
+                                                color: #1c1c38;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                padding: 8px 18px;
+                                                display: block;
+                                                border-radius: 4px;
+                                                white-space: nowrap;
+                                              "
+                                            >
+                                              Participer
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </th>
+                  <th width="40" class="d-sm-none">&nbsp;‌</th>
+
+                  <th
+                    class="col-auto mb-32"
+                    valign="top"
+                    style="
+                      background-color: #ffffff;
+                      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+                      border-radius: 5px;
+                    "
+                  >
+                    <table
+                      class="container-fluid"
+                      role="presentation"
+                      align="center"
+                      width="300"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      style="width: 300px"
+                    >
+                      <tbody>
+                        <tr>
+                          <td align="center">
+                            <a
+                              href="https://www.sampleo.com/fr/participation/1163"
+                              target="_blank"
+                              title="Go to the website"
+                              data-actito-link-name="Image campain 4"
+                            >
+                              <img
+                                src="./assets/./60f6f7f225f4b.jpg"
+                                alt="Image Campaign"
+                                width="300"
+                                class="img-fluid hover"
+                                style="
+                                  border-radius: 5px 5px 0 0;
+                                  display: block;
+                                  border: 0;
+                                  width: 100%;
+                                "
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" style="padding: 24px 0 24px 0">
+                            <table
+                              class="container"
+                              role="presentation"
+                              align="center"
+                              width="256"
+                              border="0"
+                              cellspacing="0"
+                              cellpadding="0"
+                              style="width: 256px"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td align="left">
+                                    <h3
+                                      style="
+                                        text-align: left;
+                                        font-family: 'Fira Sans', Arial,
+                                          sans-serif;
+                                        font-weight: bold;
+                                        font-size: 20px;
+                                        line-height: 24px;
+                                        padding: 0;
+                                        margin: 0;
+                                        color: #1c1c38;
+                                      "
+                                    >
+                                      Smile Makers
+                                    </h3>
+                                    <p
+                                      style="
+                                        text-align: left;
+                                        font-family: 'Fira Sans', Arial,
+                                          sans-serif;
+                                        font-weight: normal;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        padding: 0;
+                                        margin: 8px 0 16px 0;
+                                        color: #aaaaaa;
+                                      "
+                                    >
+                                      Vibromasseurs et lubrifiants Smile Makers
+                                    </p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left">
+                                    <table
+                                      role="presentation"
+                                      align="left"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      border="0"
+                                      style="
+                                        border-radius: 6px;
+                                        background: #ff7900;
+                                      "
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td
+                                            align="center"
+                                            style="padding: 4px 8px"
+                                          >
+                                            <img
+                                              src="./assets/clock-i454.png"
+                                              width="16"
+                                              style="
+                                                width: 16px;
+                                                display: block;
+                                              "
+                                            />
+                                          </td>
+                                          <td
+                                            valign="middle"
+                                            style="
+                                              padding: 0 8px 0 0;
+                                              text-align: center;
+                                              font-family: arial, sans-serif;
+                                              font-size: 12px;
+                                              line-height: 16px;
+                                              font-weight: bold;
+                                              color: #ffffff;
+                                              text-align: center;
+                                            "
+                                          >
+                                            Fin dans 10 jours
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" style="padding: 24px 0 0 0">
+                                    <table
+                                      role="presentation"
+                                      align="left"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      border="0"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td
+                                            class="s-btn s-btn__outlined"
+                                            style="
+                                              border-radius: 4px;
+                                              background: #ffffff;
+                                              text-align: center;
+                                            "
+                                          >
+                                            <a
+                                              class="s-btn s-btn__outlined"
+                                              href="https://www.sampleo.com/fr/participation/1163"
+                                              title="Go to the website"
+                                              data-actito-link-name="CTA campaign 4"
+                                              style="
+                                                background: #ffffff;
+                                                border: 0.5px solid #1c1c38;
+                                                font-family: arial, sans-serif;
+                                                font-size: 16px;
+                                                line-height: 20px;
+                                                font-weight: bold;
+                                                color: #1c1c38;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                padding: 8px 18px;
+                                                display: block;
+                                                border-radius: 4px;
+                                                white-space: nowrap;
+                                              "
+                                            >
+                                              Participer
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </th>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!--FIN CAMPAGNES OUVERTES-->
+
+      <!--DEBUT COMMENT CA MARCHE ?-->
+      <table
+        role="presentation"
+        align="center"
+        border="0"
+        cellspacing="0"
+        cellpadding="0"
+        style="background-color: #f4f4f4; width: 100%"
+      >
+        <tbody>
+          <tr>
+            <td align="center">
+              <table
+                role="presentation"
+                class="container"
+                align="center"
+                width="640"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                style="width: 640px"
+              >
+                <tr>
+                  <td align="center" style="padding: 0 0 32px 0">
+                    <div class="fixiOS" style="width: 300px; height: 1px"></div>
+                    <table
+                      role="presentation"
+                      class="container"
+                      align="center"
+                      width="576"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      style="width: 576px"
+                    >
+                      <tr>
+                        <td align="center">
+                          <h2
+                            style="
+                              font-family: 'Fira Sans', Arial, sans-serif;
+                              font-style: italic;
+                              font-weight: normal;
+                              font-size: 24px;
+                              line-height: 28px;
+                              padding: 0;
+                              margin: 0;
+                              color: #1c1c38;
+                            "
+                          >
+                            Comment ça marche ?
+                          </h2>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="padding: 16px 0 0 0">
+                          <table
+                            border="0"
+                            role="presentation"
+                            align="center"
+                            cellspacing="0"
+                            cellpadding="0"
+                            style="background-color: #1c1c38; width: 100px"
+                            width="100"
+                          >
+                            <tbody>
+                              <tr>
+                                <td
+                                  align="center"
+                                  height="1"
+                                  style="line-height: 1px; font-size: 1px"
+                                >
+                                  &nbsp;
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="d-sm-none" align="center" style="padding: 0 0 48px 0">
+              <table
+                role="presentation"
+                align="center"
+                width="640"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                style="
+                  width: 640px;
+                  background-color: #1c1c38;
+                  border-radius: 5px;
+                  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+                "
+              >
+                <tr>
+                  <td align="center" style="padding: 48px 0 0 0">
+                    <table
+                      role="presentation"
+                      class="container"
+                      align="center"
+                      width="480"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      style="width: 480px"
+                    >
+                      <tr>
+                        <td align="center">
+                          <img
+                            src="./assets/icone-clic-blanc-1-i548.png"
+                            alt="Illustration Cliquez"
+                            width="75"
+                            style="display: block; width: 75px"
+                          />
+                          <h3
+                            style="
+                              text-align: left;
+                              font-family: 'Fira Sans', Arial, sans-serif;
+                              font-weight: bold;
+                              font-size: 20px;
+                              line-height: 24px;
+                              padding: 0;
+                              margin: 16px 0 0 0;
+                              color: #ffffff;
+                            "
+                          >
+                            Cliquez
+                          </h3>
+                        </td>
+                        <td width="48">&nbsp;‌</td>
+                        <td align="center">
+                          <img
+                            src="./assets/icon-participe-blanc-1-i421.png"
+                            alt="Illustration Participez"
+                            width="56"
+                            style="display: block; width: 56px"
+                          />
+                          <h3
+                            style="
+                              text-align: left;
+                              font-family: 'Fira Sans', Arial, sans-serif;
+                              font-weight: bold;
+                              font-size: 20px;
+                              line-height: 24px;
+                              padding: 0;
+                              margin: 16px 0 0 0;
+                              color: #ffffff;
+                            "
+                          >
+                            Participez
+                          </h3>
+                        </td>
+                        <td width="48">&nbsp;‌</td>
+                        <td align="center">
+                          <img
+                            src="./assets/icone-recevrez-blanc-1-i680.png"
+                            alt="Illustration Recevez"
+                            width="70"
+                            style="display: block; width: 70px"
+                          />
+                          <h3
+                            style="
+                              text-align: left;
+                              font-family: 'Fira Sans', Arial, sans-serif;
+                              font-weight: bold;
+                              font-size: 20px;
+                              line-height: 24px;
+                              padding: 0;
+                              margin: 16px 0 0 0;
+                              color: #ffffff;
+                            "
+                          >
+                            Recevez
+                          </h3>
+                        </td>
+                        <td width="48">&nbsp;‌</td>
+                        <td align="center">
+                          <img
+                            src="./assets/icone-partage-blanc-1-i487.png"
+                            alt="Illustration Partagez"
+                            width="98"
+                            style="display: block; width: 98px"
+                          />
+                          <h3
+                            style="
+                              text-align: left;
+                              font-family: 'Fira Sans', Arial, sans-serif;
+                              font-weight: bold;
+                              font-size: 20px;
+                              line-height: 24px;
+                              padding: 0;
+                              margin: 16px 0 0 0;
+                              color: #ffffff;
+                            "
+                          >
+                            Partagez
+                          </h3>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding: 48px 0 48px 0">
+                    <table
+                      role="presentation"
+                      align="center"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                    >
+                      <tbody>
+                        <tr>
+                          <td
+                            style="
+                              border-radius: 4px;
+                              background: #ffffff;
+                              text-align: center;
+                            "
+                          >
+                            <a
+                              href="https://www.sampleo.com/fr/content/how-it-works"
+                              title="Go to the website"
+                              data-actito-link-name="CTA Learn more desktop"
+                              style="
+                                background: #ffffff;
+                                border: 0.5px solid #1c1c38;
+                                font-family: arial, sans-serif;
+                                font-size: 16px;
+                                line-height: 20px;
+                                font-weight: bold;
+                                color: #1c1c38;
+                                text-align: center;
+                                text-decoration: none;
+                                padding: 8px 18px;
+                                display: block;
+                                border-radius: 4px;
+                                white-space: nowrap;
+                              "
+                            >
+                              En savoir plus
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <!--[if !mso]><\!-->
+            <td
+              align="center"
+              class="d-block d-lg-none"
+              style="padding: 0 0 48px 0"
+            >
+              <table
+                role="presentation"
+                class="container"
+                align="center"
+                width="640"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                style="width: 640px"
+              >
+                <tr>
+                  <td
+                    align="center"
+                    style="
+                      background-color: #ffffff;
+                      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+                      border-radius: 5px;
+                    "
+                  >
+                    <table
+                      class="container-fluid"
+                      role="presentation"
+                      align="center"
+                      width="300"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      style="width: 300px"
+                    >
+                      <tbody>
+                        <tr>
+                          <td align="center">
+                            <a
+                              href="https://www.sampleo.com/fr/content/how-it-works"
+                              target="_blank"
+                              title="Go to the website"
+                              data-actito-link-name="Image campain "
+                            >
+                              <img
+                                src="./assets/gif-steps-i451.gif"
+                                alt="Image Campaign"
+                                width="300"
+                                class="img-fluid hover"
+                                style="
+                                  border-radius: 5px 5px 0 0;
+                                  display: block;
+                                  border: 0;
+                                  width: 100%;
+                                "
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" style="padding: 24px 0 24px 0">
+                            <table
+                              class="container"
+                              role="presentation"
+                              align="center"
+                              width="256"
+                              border="0"
+                              cellspacing="0"
+                              cellpadding="0"
+                              style="width: 256px"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td align="left">
+                                    <h3
+                                      style="
+                                        text-align: left;
+                                        font-family: 'Fira Sans', Arial,
+                                          sans-serif;
+                                        font-weight: bold;
+                                        font-size: 20px;
+                                        line-height: 24px;
+                                        padding: 0;
+                                        margin: 0;
+                                        color: #1c1c38;
+                                      "
+                                    >
+                                      Comment ça marche ?
+                                    </h3>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left">
+                                    <p
+                                      style="
+                                        text-align: left;
+                                        font-family: 'Fira Sans', Arial,
+                                          sans-serif;
+                                        font-weight: normal;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        padding: 0;
+                                        margin: 8 0 16px 0;
+                                        color: #aaaaaa;
+                                      "
+                                    >
+                                      Les 4 étapes pour participer aux campagnes
+                                    </p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" style="padding: 24px 0 0 0">
+                                    <table
+                                      role="presentation"
+                                      align="left"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      border="0"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td
+                                            style="
+                                              border-radius: 4px;
+                                              background: #ffffff;
+                                              text-align: center;
+                                            "
+                                          >
+                                            <a
+                                              href="https://www.sampleo.com/fr/content/how-it-works"
+                                              title="Go to the website"
+                                              data-actito-link-name="CTA Learn more desktop"
+                                              style="
+                                                background: #1c1c38;
+                                                font-family: arial, sans-serif;
+                                                font-size: 16px;
+                                                line-height: 20px;
+                                                font-weight: bold;
+                                                color: #ffffff;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                padding: 8px 18px;
+                                                display: block;
+                                                border-radius: 4px;
+                                                white-space: nowrap;
+                                              "
+                                            >
+                                              En savoir plus
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <!-- <![endif]-->
+          </tr>
+        </tbody>
+      </table>
+      <!--FIN COMMENT CA MARCHE ?-->
+
+      <!--DEBUT CAMPAGNES SOON-->
+      <table
+        role="presentation"
+        align="center"
+        border="0"
+        cellspacing="0"
+        cellpadding="0"
+        style="background-color: #f4f4f4; width: 100%"
+      >
+        <tbody>
+          <tr>
+            <td align="center">
+              <table
+                role="presentation"
+                class="container"
+                align="center"
+                width="640"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                style="width: 640px"
+              >
+                <tr>
+                  <td align="center" style="padding: 0 0 32px 0">
+                    <div class="fixiOS" style="width: 300px; height: 1px"></div>
+                    <table
+                      role="presentation"
+                      class="container"
+                      align="center"
+                      width="576"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      style="width: 576px"
+                    >
+                      <tr>
+                        <td align="center">
+                          <h2
+                            style="
+                              font-family: 'Fira Sans', Arial, sans-serif;
+                              font-style: italic;
+                              font-weight: normal;
+                              font-size: 24px;
+                              line-height: 28px;
+                              padding: 0;
+                              margin: 0;
+                              color: #1c1c38;
+                            "
+                          >
+                            Ces campagnes débutent bientôt
+                          </h2>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="padding: 16px 0 0 0">
+                          <table
+                            border="0"
+                            role="presentation"
+                            align="center"
+                            cellspacing="0"
+                            cellpadding="0"
+                            style="background-color: #1c1c38; width: 100px"
+                            width="100"
+                          >
+                            <tbody>
+                              <tr>
+                                <td
+                                  align="center"
+                                  height="1"
+                                  style="line-height: 1px; font-size: 1px"
+                                >
+                                  &nbsp;
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding: 0 0 32px 0">
+              <table
+                role="presentation"
+                class="container"
+                align="center"
+                width="640"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                style="
+                  width: 640px;
+                  background-color: #ffffff;
+                  border-radius: 5px;
+                  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+                "
+              >
+                <tr>
+                  <td align="center">
+                    <a
+                      href="https://www.sampleo.com/fr/"
+                      target="_blank"
+                      title="Go to the website"
+                      data-actito-link-name="Image campaign soon 1"
+                    >
+                      <img
+                        src="./assets/./611551ef444b0.jpg"
+                        alt="Image Campaign"
+                        width="640"
+                        style="
+                          width: 640px;
+                          display: block;
+                          border: none;
+                          border-radius: 5px 5px 0 0;
+                        "
+                        class="img-fluid hover-dark"
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center" style="padding: 24px 0 24px 0">
+                    <table
+                      role="presentation"
+                      class="container"
+                      align="center"
+                      width="576"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      style="width: 576px"
+                    >
+                      <tr>
+                        <th class="col-auto mb-48" width="340">
+                          <h3
+                            style="
+                              text-align: left;
+                              font-family: 'Fira Sans', Arial, sans-serif;
+                              font-weight: bold;
+                              font-size: 20px;
+                              line-height: 24px;
+                              padding: 0;
+                              margin: 0;
+                              color: #1c1c38;
+                            "
+                          >
+                            NESCAFÉ® Dolce Gusto®
+                          </h3>
+                          <p
+                            style="
+                              text-align: left;
+                              font-family: 'Fira Sans', Arial, sans-serif;
+                              font-weight: normal;
+                              font-size: 16px;
+                              line-height: 20px;
+                              padding: 0;
+                              margin: 8px 0 16px 0;
+                              color: #aaaaaa;
+                            "
+                          >
+                            Le meilleur des cafés, à la maison
+                          </p>
+                          <table
+                            role="presentation"
+                            align="left"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            style="
+                              border-radius: 6px;
+                              background-color: #0089f9;
+                            "
+                          >
+                            <tbody>
+                              <tr>
+                                <td align="center" style="padding: 4px 8px">
+                                  <img
+                                    src="./assets/clock-i454.png"
+                                    width="16"
+                                    style="width: 16px; display: block"
+                                  />
+                                </td>
+                                <td
+                                  valign="middle"
+                                  style="
+                                    padding: 0 8px 0 0;
+                                    text-align: center;
+                                    font-family: arial, sans-serif;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    font-weight: bold;
+                                    color: #ffffff;
+                                    text-align: center;
+                                  "
+                                >
+                                  Ouvre dans 10 jours
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </th>
+                        <th class="d-sm-none" width="125">&nbsp;</th>
+                        <th class="col-auto" valign="top">
+                          <table
+                            role="presentation"
+                            align="left"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                          >
+                            <tbody>
+                              <tr>
+                                <td
+                                  class="s-btn s-btn__outlined"
+                                  style="
+                                    border-radius: 4px;
+                                    background: #ffffff;
+                                    text-align: center;
+                                  "
+                                >
+                                  <a
+                                    class="s-btn s-btn__outlined"
+                                    href="https://www.sampleo.com/fr/"
+                                    title="Go to the website"
+                                    data-actito-link-name="CTA  campaign soon 1"
+                                    style="
+                                      background: #ffffff;
+                                      border: 0.5px solid #1c1c38;
+                                      font-family: arial, sans-serif;
+                                      font-size: 16px;
+                                      line-height: 20px;
+                                      font-weight: bold;
+                                      color: #1c1c38;
+                                      text-align: center;
+                                      text-decoration: none;
+                                      padding: 8px 18px;
+                                      display: block;
+                                      border-radius: 4px;
+                                      white-space: nowrap;
+                                    "
+                                  >
+                                    Découvrir
+                                  </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </th>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding: 0 0 48px 0">
+              <table
+                role="presentation"
+                class="container"
+                align="center"
+                width="640"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                style="
+                  width: 640px;
+                  background-color: #ffffff;
+                  border-radius: 5px;
+                  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+                "
+              >
+                <tr>
+                  <td align="center">
+                    <a
+                      href="https://www.sampleo.com/fr/"
+                      target="_blank"
+                      title="Go to the website"
+                      data-actito-link-name="Image campaign soon 2"
+                    >
+                      <img
+                        src="./assets/./6113caf91edfa.jpg"
+                        alt="Image Campaign"
+                        width="640"
+                        style="
+                          width: 640px;
+                          display: block;
+                          border: none;
+                          border-radius: 5px 5px 0 0;
+                        "
+                        class="img-fluid hover-dark"
+                      />
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center" style="padding: 24px 0 24px 0">
+                    <table
+                      role="presentation"
+                      class="container"
+                      align="center"
+                      width="576"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      style="width: 576px"
+                    >
+                      <tr>
+                        <th class="col-auto mb-48" width="340">
+                          <h3
+                            style="
+                              text-align: left;
+                              font-family: 'Fira Sans', Arial, sans-serif;
+                              font-weight: bold;
+                              font-size: 20px;
+                              line-height: 24px;
+                              padding: 0;
+                              margin: 0;
+                              color: #1c1c38;
+                            "
+                          >
+                            Mon Bio Gourmand
+                          </h3>
+                          <p
+                            style="
+                              text-align: left;
+                              font-family: 'Fira Sans', Arial, sans-serif;
+                              font-weight: normal;
+                              font-size: 16px;
+                              line-height: 20px;
+                              padding: 0;
+                              margin: 8px 0 16px 0;
+                              color: #aaaaaa;
+                            "
+                          >
+                            Gamme Mon Bio Gourmand
+                          </p>
+                          <table
+                            role="presentation"
+                            align="left"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            style="
+                              border-radius: 6px;
+                              background-color: #0089f9;
+                            "
+                          >
+                            <tbody>
+                              <tr>
+                                <td align="center" style="padding: 4px 8px">
+                                  <img
+                                    src="./assets/clock-i454.png"
+                                    width="16"
+                                    style="width: 16px; display: block"
+                                  />
+                                </td>
+                                <td
+                                  valign="middle"
+                                  style="
+                                    padding: 0 8px 0 0;
+                                    text-align: center;
+                                    font-family: arial, sans-serif;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    font-weight: bold;
+                                    color: #ffffff;
+                                    text-align: center;
+                                  "
+                                >
+                                  Ouvre dans 24 jours
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </th>
+                        <th class="d-sm-none" width="125">&nbsp;</th>
+                        <th class="col-auto" valign="top">
+                          <table
+                            role="presentation"
+                            align="left"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                          >
+                            <tbody>
+                              <tr>
+                                <td
+                                  class="s-btn s-btn__outlined"
+                                  style="
+                                    border-radius: 4px;
+                                    background: #ffffff;
+                                    text-align: center;
+                                  "
+                                >
+                                  <a
+                                    class="s-btn s-btn__outlined"
+                                    href="https://www.sampleo.com/fr/"
+                                    title="Go to the website"
+                                    data-actito-link-name="CTA  campaign soon 2"
+                                    style="
+                                      background: #ffffff;
+                                      border: 0.5px solid #1c1c38;
+                                      font-family: arial, sans-serif;
+                                      font-size: 16px;
+                                      line-height: 20px;
+                                      font-weight: bold;
+                                      color: #1c1c38;
+                                      text-align: center;
+                                      text-decoration: none;
+                                      padding: 8px 18px;
+                                      display: block;
+                                      border-radius: 4px;
+                                      white-space: nowrap;
+                                    "
+                                  >
+                                    Découvrir
+                                  </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </th>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!--FIN CAMPAGNES SOON-->
+
+      <!--DEBUT AVIS -->
+      <table
+        role="presentation"
+        align="center"
+        border="0"
+        cellspacing="0"
+        cellpadding="0"
+        style="background-color: #f4f4f4; width: 100%"
+      >
+        <tbody>
+          <tr>
+            <td align="center">
+              <table
+                role="presentation"
+                class="container"
+                align="center"
+                width="640"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                style="width: 640px"
+              >
+                <tr>
+                  <td align="center" style="padding: 0 0 32px 0">
+                    <div class="fixiOS" style="width: 300px; height: 1px"></div>
+                    <table
+                      role="presentation"
+                      class="container"
+                      align="center"
+                      width="576"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      style="width: 576px"
+                    >
+                      <tr>
+                        <td align="center">
+                          <h2
+                            style="
+                              font-family: 'Fira Sans', Arial, sans-serif;
+                              font-style: italic;
+                              font-weight: normal;
+                              font-size: 24px;
+                              line-height: 28px;
+                              padding: 0;
+                              margin: 0;
+                              color: #1c1c38;
+                            "
+                          >
+                            Les derniers avis de nos ambassadeurs
+                          </h2>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="padding: 16px 0 0 0">
+                          <table
+                            border="0"
+                            role="presentation"
+                            align="center"
+                            cellspacing="0"
+                            cellpadding="0"
+                            style="background-color: #1c1c38; width: 100px"
+                            width="100"
+                          >
+                            <tbody>
+                              <tr>
+                                <td
+                                  align="center"
+                                  height="1"
+                                  style="line-height: 1px; font-size: 1px"
+                                >
+                                  &nbsp;
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding: 0 0 32px 0">
+              <table
+                role="presentation"
+                class="container"
+                align="center"
+                width="640"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                style="
+                  width: 640px;
+                  background-color: #ffffff;
+                  border-radius: 5px;
+                  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+                "
+              >
+                <tbody>
+                  <tr>
+                    <td align="center" style="padding: 24px 0 24px 0">
+                      <table
+                        role="presentation"
+                        class="container"
+                        align="center"
+                        width="576"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="width: 576px; background-color: #ffffff"
+                      >
+                        <tbody>
+                          <tr>
+                            <th class="display-footer" valign="top">
+                              <table
+                                role="presentation"
+                                class="container-fluid"
+                                align="left"
+                                style="padding: 0 0 16px 0"
+                                cellspacing="0"
+                                cellpadding="0"
+                                border="0"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <h3
+                                        style="
+                                          text-align: left;
+                                          font-family: 'Fira Sans', Arial,
+                                            sans-serif;
+                                          font-weight: bold;
+                                          font-size: 20px;
+                                          line-height: 24px;
+                                          padding: 0;
+                                          margin: 0;
+                                          color: #1c1c38;
+                                        "
+                                      >
+                                        Babybio
+                                      </h3>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left">
+                                      <img
+                                        src="./assets/4-5-i559.png"
+                                        alt="Illustration Stars"
+                                        style="width: 104px; margin: 16px 0"
+                                        width="104"
+                                      />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left">
+                                      <p
+                                        style="
+                                          font-style: italic;
+                                          font-family: 'Fira Sans', 'Arial',
+                                            Sans-serif;
+                                          color: #aaaaaa;
+                                          font-size: 16px;
+                                          line-height: 20px;
+                                          margin: 0;
+                                          padding: 0;
+                                          font-weight: normal;
+                                        "
+                                      >
+                                        La marque babybio est une marque que je
+                                        consomme depuis la naissance de mon
+                                        premier enfant en 2017...
+                                      </p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left">
+                                      <p
+                                        style="
+                                          font-family: 'Fira Sans', 'Arial',
+                                            Sans-serif;
+                                          color: #1c1c38;
+                                          font-size: 14px;
+                                          line-height: 18px;
+                                          margin: 16px 0;
+                                          padding: 0;
+                                          font-weight: bold;
+                                        "
+                                      >
+                                        Christelle D, 51 ans
+                                      </p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left">
+                                      <table
+                                        role="presentation"
+                                        align="left"
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        border="0"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              class="s-btn s-btn__outlined"
+                                              style="
+                                                border-radius: 4px;
+                                                background: #ffffff;
+                                                text-align: center;
+                                              "
+                                            >
+                                              <a
+                                                class="s-btn s-btn__outlined"
+                                                href="https://www.sampleo.com/fr/"
+                                                title="Go to the website"
+                                                data-actito-link-name="CTA Review "
+                                                style="
+                                                  background: #ffffff;
+                                                  border: 0.5px solid #1c1c38;
+                                                  font-family: arial, sans-serif;
+                                                  font-size: 16px;
+                                                  line-height: 20px;
+                                                  font-weight: bold;
+                                                  color: #1c1c38;
+                                                  text-align: center;
+                                                  text-decoration: none;
+                                                  padding: 8px 18px;
+                                                  display: block;
+                                                  border-radius: 4px;
+                                                  white-space: nowrap;
+                                                "
+                                              >
+                                                Lire plus
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                            <th width="24" class="d-sm-none">&nbsp;‌</th>
+                            <th
+                              class="display-header"
+                              align="left"
+                              valign="top"
+                            >
+                              <a
+                                href="#"
+                                data-actito-link-name="Image - Ambassador "
+                                title="Go to the website"
+                                target="_blank"
+                                style="border: none"
+                              >
+                                <img
+                                  src="./assets/58ddcebf413a36b9ffcab2fc1ee4377c31ebe748-1-i456.png"
+                                  alt="Illustration Reviews"
+                                  class="mb-16"
+                                  style="width: 215px"
+                                  width="215"
+                              /></a>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding: 0 0 48px 0">
+              <table
+                role="presentation"
+                class="container"
+                align="center"
+                width="640"
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                style="
+                  width: 640px;
+                  background-color: #ffffff;
+                  border-radius: 5px;
+                  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+                "
+              >
+                <tbody>
+                  <tr>
+                    <td align="center" style="padding: 24px 0 24px 0">
+                      <table
+                        role="presentation"
+                        class="container"
+                        align="center"
+                        width="576"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="width: 576px; background-color: #ffffff"
+                      >
+                        <tbody>
+                          <tr>
+                            <th
+                              class="display-header"
+                              align="left"
+                              valign="top"
+                            >
+                              <a
+                                href="#"
+                                data-actito-link-name="Image - Ambassador "
+                                title="Go to the website"
+                                target="_blank"
+                                style="border: none"
+                              >
+                                <img
+                                  src="./assets/58ddcebf413a36b9ffcab2fc1ee4377c31ebe748-1-i456.png"
+                                  alt="Illustration Reviews"
+                                  class="mb-16"
+                                  style="width: 215px"
+                                  width="215"
+                              /></a>
+                            </th>
+                            <th width="24" class="d-sm-none">&nbsp;‌</th>
+                            <th class="display-footer" valign="top">
+                              <table
+                                role="presentation"
+                                class="container-fluid"
+                                align="left"
+                                style="padding: 0 0 16px 0"
+                                cellspacing="0"
+                                cellpadding="0"
+                                border="0"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <h3
+                                        style="
+                                          text-align: left;
+                                          font-family: 'Fira Sans', Arial,
+                                            sans-serif;
+                                          font-weight: bold;
+                                          font-size: 20px;
+                                          line-height: 24px;
+                                          padding: 0;
+                                          margin: 0;
+                                          color: #1c1c38;
+                                        "
+                                      >
+                                        Babybio
+                                      </h3>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left">
+                                      <img
+                                        src="./assets/4-5-i559.png"
+                                        alt="Illustration Stars"
+                                        style="width: 104px; margin: 16px 0"
+                                        width="104"
+                                      />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left">
+                                      <p
+                                        style="
+                                          font-style: italic;
+                                          font-family: 'Fira Sans', 'Arial',
+                                            Sans-serif;
+                                          color: #aaaaaa;
+                                          font-size: 16px;
+                                          line-height: 20px;
+                                          margin: 0;
+                                          padding: 0;
+                                          font-weight: normal;
+                                        "
+                                      >
+                                        La marque babybio est une marque que je
+                                        consomme depuis la naissance de mon
+                                        premier enfant en 2017...
+                                      </p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left">
+                                      <p
+                                        style="
+                                          font-family: 'Fira Sans', 'Arial',
+                                            Sans-serif;
+                                          color: #1c1c38;
+                                          font-size: 14px;
+                                          line-height: 18px;
+                                          margin: 16px 0;
+                                          padding: 0;
+                                          font-weight: bold;
+                                        "
+                                      >
+                                        Christelle D, 51 ans
+                                      </p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left">
+                                      <table
+                                        role="presentation"
+                                        align="left"
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        border="0"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              class="s-btn s-btn__outlined"
+                                              style="
+                                                border-radius: 4px;
+                                                background: #ffffff;
+                                                text-align: center;
+                                              "
+                                            >
+                                              <a
+                                                class="s-btn s-btn__outlined"
+                                                href="https://www.sampleo.com/fr/"
+                                                title="Go to the website"
+                                                data-actito-link-name="CTA Review "
+                                                style="
+                                                  background: #ffffff;
+                                                  border: 0.5px solid #1c1c38;
+                                                  font-family: arial, sans-serif;
+                                                  font-size: 16px;
+                                                  line-height: 20px;
+                                                  font-weight: bold;
+                                                  color: #1c1c38;
+                                                  text-align: center;
+                                                  text-decoration: none;
+                                                  padding: 8px 18px;
+                                                  display: block;
+                                                  border-radius: 4px;
+                                                  white-space: nowrap;
+                                                "
+                                              >
+                                                Lire plus
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!--FIN AVIS-->
+
+      <!-- DEBUT FOOTER -->
+      <table
+        class="container-fluid"
+        role="presentation"
+        cellpadding="0"
+        cellspacing="0"
+        border="0"
+        width="100%"
+        align="center"
+        style="background-color: #f5f5f5; width: 100%"
+      >
+        <tbody>
+          <tr>
+            <td align="center">
+              <table
+                class="container"
+                role="presentation"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                width="640"
+                align="center"
+                style="background-color: #f4f4f4; width: 640px"
+              >
+                <tbody>
+                  <tr>
+                    <td align="center">
+                      <div
+                        class="fixiOS"
+                        style="width: 300px; height: 0px"
+                      ></div>
+                      <table
+                        class="container-fluid"
+                        role="presentation"
+                        cellspacing="0"
+                        border="0"
+                        width="540"
+                        align="center"
+                        style="
+                          background-color: #f5f5f5;
+                          width: 540px;
+                          padding: 0 0 32px 0;
+                        "
+                      >
+                        <tbody>
+                          <tr>
+                            <td align="center" style="padding: 0 0 24px 0">
+                              <p
+                                style="
+                                  font-family: 'Fira Sans', sans-serif;
+                                  font-weight: bold;
+                                  font-size: 18px;
+                                  padding: 0;
+                                  margin: 0;
+                                "
+                              >
+                                <a
+                                  href="${unsubscribe}"
+                                  style="
+                                    text-decoration: underline;
+                                    color: #1c1c38;
+                                  "
+                                  target="_blank"
+                                  title="unsubscribe"
+                                  data-actito-link-name="unsubscribe"
+                                >
+                                  Se désabonner
+                                </a>
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <p
+                                style="
+                                  color: #1c1c38;
+                                  font-family: 'Arial', sans-serif;
+                                  font-size: 12px;
+                                  padding: 0 0 32px 0;
+                                "
+                              >
+                                Vous recevez la newsletter Sampleo suite à votre
+                                inscription au site sampleo.com.<br /><br />
+                                Conformément à la loi « informatique et libertés
+                                », vous pouvez exercer votre droit d'accès aux
+                                données vous concernant et les faire rectifier
+                                en vous contactant notre gestion des données
+                                personnelles. En validant votre inscription,
+                                vous acceptez les Conditions Générales
+                                d'Utilisation.
+                                <br /><br />
+                                SAMPLEO, 2, Rue Paul Vaillant Couturier, 92300
+                                Levallois-Perret, France
+                              </p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- FIN FOOTER -->
+    </div>
+  </body>
+</html>
