@@ -19,3 +19,7 @@ here are some templates that I created during my experiences
 
 ###  DrGood
 - [NL Veto](https://vncpsq.github.io/Emailing/DrGood/drgoodveto/index.html)
+
+###  Michelin
+- [NL Sport Cup 2](https://vncpsq.github.io/Emailing/Michelin/sport-cup2-connect/index.html)
+
